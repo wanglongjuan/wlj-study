@@ -9,6 +9,5 @@ int main()
          h=2*150/up;
          s=(up+down)*h/2;
          printf("s=%0.2f\n",s);
-         system("pause");
          return 0;
 }
