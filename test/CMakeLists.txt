@@ -1,0 +1,5 @@
+add_executable(max max.cpp)
+add_executable(sqr sqr.cpp)
+add_executable(tixing tixing.cpp)
+add_executable(sum sum.cpp)
+add_executable(factorial factorial.cpp)
