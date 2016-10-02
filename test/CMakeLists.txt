@@ -3,3 +3,8 @@ add_executable(sqr sqr.cpp)
 add_executable(tixing tixing.cpp)
 add_executable(sum sum.cpp)
 add_executable(factorial factorial.cpp)
+
+if(HAVE_CGAL)
+    add_executable(CGAL_test CGAL_test.cpp)
+    target_link_libraries(CGAL_test  ${CGAL_LIBRARIES})
+endif()
