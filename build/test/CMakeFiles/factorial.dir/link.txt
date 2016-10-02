@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/factorial.dir/factorial.cpp.o  -o factorial -rdynamic 
