@@ -1,0 +1,28 @@
+//三个数的降序pailie
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,t;
+    cin >> a >> b >> c;
+    if(a<b)
+    {
+        t=a;
+        a=b;
+        b=t;
+    }
+    if(a<c)
+    {
+        t=a;
+        a=c;
+        c=t;
+    }
+    if(b<c)
+    {
+        t=b;
+        b=c;
+        c=t;
+    }
+    cout << "the rank is : " << a << b << c << endl;
+    return 0;
+}
