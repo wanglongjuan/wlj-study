@@ -18,3 +18,5 @@ add_executable(sqr1 sqr1.cpp)
 add_executable(trigon trigon.cpp)
 add_executable(if1 if1.cpp)
 add_executable(if2 if2.cpp)
+add_executable(arctan arctan.cpp)
+
