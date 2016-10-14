@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/asterist.dir/asterist.cpp.o  -o asterist  -L/usr/local/lib -rdynamic 

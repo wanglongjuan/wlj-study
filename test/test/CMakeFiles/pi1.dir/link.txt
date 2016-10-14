@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/pi1.dir/pi1.cpp.o  -o pi1  -L/usr/local/lib -rdynamic 

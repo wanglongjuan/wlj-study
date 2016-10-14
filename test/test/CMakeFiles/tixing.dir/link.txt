@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/tixing.dir/tixing.cpp.o  -o tixing  -L/usr/local/lib -rdynamic 
