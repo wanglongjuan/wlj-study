@@ -2,14 +2,9 @@
 using namespace std;
 int main()
 {
-    int x,y;
-    x=1;
-    y=2;
-    while(y<=5)
-    {
-        x=x*y;
-        y=y+1;
-    }
-    cout<<"5的阶乘是："<<x<<endl;
+    int y=1;
+    for(int i=1; i<=5;i++)
+        y=y*i;
+    cout<<"5的阶乘是："<<y<<endl;
     return 0;
 }

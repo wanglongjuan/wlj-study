@@ -155,6 +155,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named pingf3
+
+# Build rule for target.
+pingf3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pingf3
+.PHONY : pingf3
+
+# fast build rule for target.
+pingf3/fast:
+	$(MAKE) -f test/CMakeFiles/pingf3.dir/build.make test/CMakeFiles/pingf3.dir/build
+.PHONY : pingf3/fast
+
+#=============================================================================
+# Target rules for targets named pingf2
+
+# Build rule for target.
+pingf2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pingf2
+.PHONY : pingf2
+
+# fast build rule for target.
+pingf2/fast:
+	$(MAKE) -f test/CMakeFiles/pingf2.dir/build.make test/CMakeFiles/pingf2.dir/build
+.PHONY : pingf2/fast
+
+#=============================================================================
+# Target rules for targets named pingf
+
+# Build rule for target.
+pingf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pingf
+.PHONY : pingf
+
+# fast build rule for target.
+pingf/fast:
+	$(MAKE) -f test/CMakeFiles/pingf.dir/build.make test/CMakeFiles/pingf.dir/build
+.PHONY : pingf/fast
+
+#=============================================================================
+# Target rules for targets named jiecheng
+
+# Build rule for target.
+jiecheng: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jiecheng
+.PHONY : jiecheng
+
+# fast build rule for target.
+jiecheng/fast:
+	$(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/build
+.PHONY : jiecheng/fast
+
+#=============================================================================
+# Target rules for targets named 3
+
+# Build rule for target.
+3 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 3
+.PHONY : 3
+
+# fast build rule for target.
+3/fast:
+	$(MAKE) -f test/CMakeFiles/3.dir/build.make test/CMakeFiles/3.dir/build
+.PHONY : 3/fast
+
+#=============================================================================
+# Target rules for targets named daoshu
+
+# Build rule for target.
+daoshu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 daoshu
+.PHONY : daoshu
+
+# fast build rule for target.
+daoshu/fast:
+	$(MAKE) -f test/CMakeFiles/daoshu.dir/build.make test/CMakeFiles/daoshu.dir/build
+.PHONY : daoshu/fast
+
+#=============================================================================
 # Target rules for targets named dis
 
 # Build rule for target.
@@ -218,6 +296,19 @@ CGAL_test: cmake_check_build_system
 CGAL_test/fast:
 	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
 .PHONY : CGAL_test/fast
+
+#=============================================================================
+# Target rules for targets named 2
+
+# Build rule for target.
+2 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2
+.PHONY : 2
+
+# fast build rule for target.
+2/fast:
+	$(MAKE) -f test/CMakeFiles/2.dir/build.make test/CMakeFiles/2.dir/build
+.PHONY : 2/fast
 
 #=============================================================================
 # Target rules for targets named sqr
@@ -504,11 +595,18 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... pingf3"
+	@echo "... pingf2"
+	@echo "... pingf"
+	@echo "... jiecheng"
+	@echo "... 3"
+	@echo "... daoshu"
 	@echo "... dis"
 	@echo "... pi1"
 	@echo "... trigon"
 	@echo "... gcd"
 	@echo "... CGAL_test"
+	@echo "... 2"
 	@echo "... sqr"
 	@echo "... dowhile"
 	@echo "... fun"

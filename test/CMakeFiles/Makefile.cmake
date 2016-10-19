@@ -51,11 +51,18 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "test/CMakeFiles/pingf3.dir/DependInfo.cmake"
+  "test/CMakeFiles/pingf2.dir/DependInfo.cmake"
+  "test/CMakeFiles/pingf.dir/DependInfo.cmake"
+  "test/CMakeFiles/jiecheng.dir/DependInfo.cmake"
+  "test/CMakeFiles/3.dir/DependInfo.cmake"
+  "test/CMakeFiles/daoshu.dir/DependInfo.cmake"
   "test/CMakeFiles/dis.dir/DependInfo.cmake"
   "test/CMakeFiles/pi1.dir/DependInfo.cmake"
   "test/CMakeFiles/trigon.dir/DependInfo.cmake"
   "test/CMakeFiles/gcd.dir/DependInfo.cmake"
   "test/CMakeFiles/CGAL_test.dir/DependInfo.cmake"
+  "test/CMakeFiles/2.dir/DependInfo.cmake"
   "test/CMakeFiles/sqr.dir/DependInfo.cmake"
   "test/CMakeFiles/dowhile.dir/DependInfo.cmake"
   "test/CMakeFiles/fun.dir/DependInfo.cmake"

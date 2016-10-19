@@ -155,6 +155,96 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/pingf3.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/pingf3.dir/rule
+.PHONY : test/CMakeFiles/pingf3.dir/rule
+
+# Convenience name for target.
+pingf3: test/CMakeFiles/pingf3.dir/rule
+
+.PHONY : pingf3
+
+# fast build rule for target.
+pingf3/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf3.dir/build.make test/CMakeFiles/pingf3.dir/build
+.PHONY : pingf3/fast
+
+# Convenience name for target.
+test/CMakeFiles/pingf2.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/pingf2.dir/rule
+.PHONY : test/CMakeFiles/pingf2.dir/rule
+
+# Convenience name for target.
+pingf2: test/CMakeFiles/pingf2.dir/rule
+
+.PHONY : pingf2
+
+# fast build rule for target.
+pingf2/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf2.dir/build.make test/CMakeFiles/pingf2.dir/build
+.PHONY : pingf2/fast
+
+# Convenience name for target.
+test/CMakeFiles/pingf.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/pingf.dir/rule
+.PHONY : test/CMakeFiles/pingf.dir/rule
+
+# Convenience name for target.
+pingf: test/CMakeFiles/pingf.dir/rule
+
+.PHONY : pingf
+
+# fast build rule for target.
+pingf/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf.dir/build.make test/CMakeFiles/pingf.dir/build
+.PHONY : pingf/fast
+
+# Convenience name for target.
+test/CMakeFiles/jiecheng.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/jiecheng.dir/rule
+.PHONY : test/CMakeFiles/jiecheng.dir/rule
+
+# Convenience name for target.
+jiecheng: test/CMakeFiles/jiecheng.dir/rule
+
+.PHONY : jiecheng
+
+# fast build rule for target.
+jiecheng/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/build
+.PHONY : jiecheng/fast
+
+# Convenience name for target.
+test/CMakeFiles/3.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3.dir/rule
+.PHONY : test/CMakeFiles/3.dir/rule
+
+# Convenience name for target.
+3 : test/CMakeFiles/3.dir/rule
+
+.PHONY : 3
+
+# fast build rule for target.
+3/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/3.dir/build.make test/CMakeFiles/3.dir/build
+.PHONY : 3/fast
+
+# Convenience name for target.
+test/CMakeFiles/daoshu.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/daoshu.dir/rule
+.PHONY : test/CMakeFiles/daoshu.dir/rule
+
+# Convenience name for target.
+daoshu: test/CMakeFiles/daoshu.dir/rule
+
+.PHONY : daoshu
+
+# fast build rule for target.
+daoshu/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/daoshu.dir/build.make test/CMakeFiles/daoshu.dir/build
+.PHONY : daoshu/fast
+
+# Convenience name for target.
 test/CMakeFiles/dis.dir/rule:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/dis.dir/rule
 .PHONY : test/CMakeFiles/dis.dir/rule
@@ -228,6 +318,21 @@ CGAL_test: test/CMakeFiles/CGAL_test.dir/rule
 CGAL_test/fast:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
 .PHONY : CGAL_test/fast
+
+# Convenience name for target.
+test/CMakeFiles/2.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/2.dir/rule
+.PHONY : test/CMakeFiles/2.dir/rule
+
+# Convenience name for target.
+2 : test/CMakeFiles/2.dir/rule
+
+.PHONY : 2
+
+# fast build rule for target.
+2/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/2.dir/build.make test/CMakeFiles/2.dir/build
+.PHONY : 2/fast
 
 # Convenience name for target.
 test/CMakeFiles/sqr.dir/rule:
@@ -544,6 +649,60 @@ arctan/fast:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/arctan.dir/build.make test/CMakeFiles/arctan.dir/build
 .PHONY : arctan/fast
 
+2.o: 2.cpp.o
+
+.PHONY : 2.o
+
+# target to build an object file
+2.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/2.dir/build.make test/CMakeFiles/2.dir/2.cpp.o
+.PHONY : 2.cpp.o
+
+2.i: 2.cpp.i
+
+.PHONY : 2.i
+
+# target to preprocess a source file
+2.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/2.dir/build.make test/CMakeFiles/2.dir/2.cpp.i
+.PHONY : 2.cpp.i
+
+2.s: 2.cpp.s
+
+.PHONY : 2.s
+
+# target to generate assembly for a file
+2.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/2.dir/build.make test/CMakeFiles/2.dir/2.cpp.s
+.PHONY : 2.cpp.s
+
+3.o: 3.cpp.o
+
+.PHONY : 3.o
+
+# target to build an object file
+3.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/3.dir/build.make test/CMakeFiles/3.dir/3.cpp.o
+.PHONY : 3.cpp.o
+
+3.i: 3.cpp.i
+
+.PHONY : 3.i
+
+# target to preprocess a source file
+3.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/3.dir/build.make test/CMakeFiles/3.dir/3.cpp.i
+.PHONY : 3.cpp.i
+
+3.s: 3.cpp.s
+
+.PHONY : 3.s
+
+# target to generate assembly for a file
+3.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/3.dir/build.make test/CMakeFiles/3.dir/3.cpp.s
+.PHONY : 3.cpp.s
+
 CGAL_test.o: CGAL_test.cpp.o
 
 .PHONY : CGAL_test.o
@@ -678,6 +837,33 @@ circle.s: circle.cpp.s
 circle.cpp.s:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/circle.dir/build.make test/CMakeFiles/circle.dir/circle.cpp.s
 .PHONY : circle.cpp.s
+
+daoshu.o: daoshu.cpp.o
+
+.PHONY : daoshu.o
+
+# target to build an object file
+daoshu.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/daoshu.dir/build.make test/CMakeFiles/daoshu.dir/daoshu.cpp.o
+.PHONY : daoshu.cpp.o
+
+daoshu.i: daoshu.cpp.i
+
+.PHONY : daoshu.i
+
+# target to preprocess a source file
+daoshu.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/daoshu.dir/build.make test/CMakeFiles/daoshu.dir/daoshu.cpp.i
+.PHONY : daoshu.cpp.i
+
+daoshu.s: daoshu.cpp.s
+
+.PHONY : daoshu.s
+
+# target to generate assembly for a file
+daoshu.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/daoshu.dir/build.make test/CMakeFiles/daoshu.dir/daoshu.cpp.s
+.PHONY : daoshu.cpp.s
 
 dis.o: dis.cpp.o
 
@@ -895,6 +1081,33 @@ if2.cpp.s:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/if2.dir/build.make test/CMakeFiles/if2.dir/if2.cpp.s
 .PHONY : if2.cpp.s
 
+jiecheng.o: jiecheng.cpp.o
+
+.PHONY : jiecheng.o
+
+# target to build an object file
+jiecheng.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/jiecheng.cpp.o
+.PHONY : jiecheng.cpp.o
+
+jiecheng.i: jiecheng.cpp.i
+
+.PHONY : jiecheng.i
+
+# target to preprocess a source file
+jiecheng.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/jiecheng.cpp.i
+.PHONY : jiecheng.cpp.i
+
+jiecheng.s: jiecheng.cpp.s
+
+.PHONY : jiecheng.s
+
+# target to generate assembly for a file
+jiecheng.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/jiecheng.cpp.s
+.PHONY : jiecheng.cpp.s
+
 max.o: max.cpp.o
 
 .PHONY : max.o
@@ -975,6 +1188,87 @@ pi1.s: pi1.cpp.s
 pi1.cpp.s:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pi1.dir/build.make test/CMakeFiles/pi1.dir/pi1.cpp.s
 .PHONY : pi1.cpp.s
+
+pingf.o: pingf.cpp.o
+
+.PHONY : pingf.o
+
+# target to build an object file
+pingf.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf.dir/build.make test/CMakeFiles/pingf.dir/pingf.cpp.o
+.PHONY : pingf.cpp.o
+
+pingf.i: pingf.cpp.i
+
+.PHONY : pingf.i
+
+# target to preprocess a source file
+pingf.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf.dir/build.make test/CMakeFiles/pingf.dir/pingf.cpp.i
+.PHONY : pingf.cpp.i
+
+pingf.s: pingf.cpp.s
+
+.PHONY : pingf.s
+
+# target to generate assembly for a file
+pingf.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf.dir/build.make test/CMakeFiles/pingf.dir/pingf.cpp.s
+.PHONY : pingf.cpp.s
+
+pingf2.o: pingf2.cpp.o
+
+.PHONY : pingf2.o
+
+# target to build an object file
+pingf2.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf2.dir/build.make test/CMakeFiles/pingf2.dir/pingf2.cpp.o
+.PHONY : pingf2.cpp.o
+
+pingf2.i: pingf2.cpp.i
+
+.PHONY : pingf2.i
+
+# target to preprocess a source file
+pingf2.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf2.dir/build.make test/CMakeFiles/pingf2.dir/pingf2.cpp.i
+.PHONY : pingf2.cpp.i
+
+pingf2.s: pingf2.cpp.s
+
+.PHONY : pingf2.s
+
+# target to generate assembly for a file
+pingf2.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf2.dir/build.make test/CMakeFiles/pingf2.dir/pingf2.cpp.s
+.PHONY : pingf2.cpp.s
+
+pingf3.o: pingf3.cpp.o
+
+.PHONY : pingf3.o
+
+# target to build an object file
+pingf3.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf3.dir/build.make test/CMakeFiles/pingf3.dir/pingf3.cpp.o
+.PHONY : pingf3.cpp.o
+
+pingf3.i: pingf3.cpp.i
+
+.PHONY : pingf3.i
+
+# target to preprocess a source file
+pingf3.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf3.dir/build.make test/CMakeFiles/pingf3.dir/pingf3.cpp.i
+.PHONY : pingf3.cpp.i
+
+pingf3.s: pingf3.cpp.s
+
+.PHONY : pingf3.s
+
+# target to generate assembly for a file
+pingf3.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf3.dir/build.make test/CMakeFiles/pingf3.dir/pingf3.cpp.s
+.PHONY : pingf3.cpp.s
 
 rank.o: rank.cpp.o
 
@@ -1256,12 +1550,19 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... pingf3"
+	@echo "... pingf2"
+	@echo "... pingf"
+	@echo "... jiecheng"
+	@echo "... 3"
+	@echo "... daoshu"
 	@echo "... dis"
 	@echo "... pi1"
 	@echo "... install/strip"
 	@echo "... trigon"
 	@echo "... gcd"
 	@echo "... CGAL_test"
+	@echo "... 2"
 	@echo "... sqr"
 	@echo "... dowhile"
 	@echo "... fun"
@@ -1284,6 +1585,12 @@ help:
 	@echo "... formore"
 	@echo "... sum1"
 	@echo "... arctan"
+	@echo "... 2.o"
+	@echo "... 2.i"
+	@echo "... 2.s"
+	@echo "... 3.o"
+	@echo "... 3.i"
+	@echo "... 3.s"
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
@@ -1299,6 +1606,9 @@ help:
 	@echo "... circle.o"
 	@echo "... circle.i"
 	@echo "... circle.s"
+	@echo "... daoshu.o"
+	@echo "... daoshu.i"
+	@echo "... daoshu.s"
 	@echo "... dis.o"
 	@echo "... dis.i"
 	@echo "... dis.s"
@@ -1323,6 +1633,9 @@ help:
 	@echo "... if2.o"
 	@echo "... if2.i"
 	@echo "... if2.s"
+	@echo "... jiecheng.o"
+	@echo "... jiecheng.i"
+	@echo "... jiecheng.s"
 	@echo "... max.o"
 	@echo "... max.i"
 	@echo "... max.s"
@@ -1332,6 +1645,15 @@ help:
 	@echo "... pi1.o"
 	@echo "... pi1.i"
 	@echo "... pi1.s"
+	@echo "... pingf.o"
+	@echo "... pingf.i"
+	@echo "... pingf.s"
+	@echo "... pingf2.o"
+	@echo "... pingf2.i"
+	@echo "... pingf2.s"
+	@echo "... pingf3.o"
+	@echo "... pingf3.i"
+	@echo "... pingf3.s"
 	@echo "... rank.o"
 	@echo "... rank.i"
 	@echo "... rank.s"
