@@ -20,6 +20,7 @@
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/list_install_components.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/rebuild_cache.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/edit_cache.dir
+/home/wlj/repository/wlj-study/test/test/CMakeFiles/feibo.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/pingf3.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/pingf2.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/pingf.dir
@@ -41,6 +42,7 @@
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/sqr1.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/tixing.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/install/local.dir
+/home/wlj/repository/wlj-study/test/test/CMakeFiles/4.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/circle.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/side.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/if1.dir

@@ -155,6 +155,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/feibo.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/feibo.dir/rule
+.PHONY : test/CMakeFiles/feibo.dir/rule
+
+# Convenience name for target.
+feibo: test/CMakeFiles/feibo.dir/rule
+
+.PHONY : feibo
+
+# fast build rule for target.
+feibo/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/feibo.dir/build.make test/CMakeFiles/feibo.dir/build
+.PHONY : feibo/fast
+
+# Convenience name for target.
 test/CMakeFiles/pingf3.dir/rule:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/pingf3.dir/rule
 .PHONY : test/CMakeFiles/pingf3.dir/rule
@@ -440,6 +455,21 @@ tixing/fast:
 .PHONY : tixing/fast
 
 # Convenience name for target.
+test/CMakeFiles/4.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/4.dir/rule
+.PHONY : test/CMakeFiles/4.dir/rule
+
+# Convenience name for target.
+4 : test/CMakeFiles/4.dir/rule
+
+.PHONY : 4
+
+# fast build rule for target.
+4/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/4.dir/build.make test/CMakeFiles/4.dir/build
+.PHONY : 4/fast
+
+# Convenience name for target.
 test/CMakeFiles/circle.dir/rule:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/circle.dir/rule
 .PHONY : test/CMakeFiles/circle.dir/rule
@@ -703,6 +733,33 @@ arctan/fast:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/3.dir/build.make test/CMakeFiles/3.dir/3.cpp.s
 .PHONY : 3.cpp.s
 
+4.o: 4.cpp.o
+
+.PHONY : 4.o
+
+# target to build an object file
+4.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/4.dir/build.make test/CMakeFiles/4.dir/4.cpp.o
+.PHONY : 4.cpp.o
+
+4.i: 4.cpp.i
+
+.PHONY : 4.i
+
+# target to preprocess a source file
+4.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/4.dir/build.make test/CMakeFiles/4.dir/4.cpp.i
+.PHONY : 4.cpp.i
+
+4.s: 4.cpp.s
+
+.PHONY : 4.s
+
+# target to generate assembly for a file
+4.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/4.dir/build.make test/CMakeFiles/4.dir/4.cpp.s
+.PHONY : 4.cpp.s
+
 CGAL_test.o: CGAL_test.cpp.o
 
 .PHONY : CGAL_test.o
@@ -945,6 +1002,33 @@ factorial.s: factorial.cpp.s
 factorial.cpp.s:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/factorial.dir/build.make test/CMakeFiles/factorial.dir/factorial.cpp.s
 .PHONY : factorial.cpp.s
+
+feibo.o: feibo.cpp.o
+
+.PHONY : feibo.o
+
+# target to build an object file
+feibo.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/feibo.dir/build.make test/CMakeFiles/feibo.dir/feibo.cpp.o
+.PHONY : feibo.cpp.o
+
+feibo.i: feibo.cpp.i
+
+.PHONY : feibo.i
+
+# target to preprocess a source file
+feibo.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/feibo.dir/build.make test/CMakeFiles/feibo.dir/feibo.cpp.i
+.PHONY : feibo.cpp.i
+
+feibo.s: feibo.cpp.s
+
+.PHONY : feibo.s
+
+# target to generate assembly for a file
+feibo.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/feibo.dir/build.make test/CMakeFiles/feibo.dir/feibo.cpp.s
+.PHONY : feibo.cpp.s
 
 formore.o: formore.cpp.o
 
@@ -1550,6 +1634,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... feibo"
 	@echo "... pingf3"
 	@echo "... pingf2"
 	@echo "... pingf"
@@ -1571,6 +1656,7 @@ help:
 	@echo "... sqr1"
 	@echo "... tixing"
 	@echo "... install/local"
+	@echo "... 4"
 	@echo "... circle"
 	@echo "... side"
 	@echo "... if1"
@@ -1591,6 +1677,9 @@ help:
 	@echo "... 3.o"
 	@echo "... 3.i"
 	@echo "... 3.s"
+	@echo "... 4.o"
+	@echo "... 4.i"
+	@echo "... 4.s"
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
@@ -1618,6 +1707,9 @@ help:
 	@echo "... factorial.o"
 	@echo "... factorial.i"
 	@echo "... factorial.s"
+	@echo "... feibo.o"
+	@echo "... feibo.i"
+	@echo "... feibo.s"
 	@echo "... formore.o"
 	@echo "... formore.i"
 	@echo "... formore.s"

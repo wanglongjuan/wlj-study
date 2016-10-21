@@ -155,6 +155,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named feibo
+
+# Build rule for target.
+feibo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 feibo
+.PHONY : feibo
+
+# fast build rule for target.
+feibo/fast:
+	$(MAKE) -f test/CMakeFiles/feibo.dir/build.make test/CMakeFiles/feibo.dir/build
+.PHONY : feibo/fast
+
+#=============================================================================
 # Target rules for targets named pingf3
 
 # Build rule for target.
@@ -402,6 +415,19 @@ tixing/fast:
 .PHONY : tixing/fast
 
 #=============================================================================
+# Target rules for targets named 4
+
+# Build rule for target.
+4 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 4
+.PHONY : 4
+
+# fast build rule for target.
+4/fast:
+	$(MAKE) -f test/CMakeFiles/4.dir/build.make test/CMakeFiles/4.dir/build
+.PHONY : 4/fast
+
+#=============================================================================
 # Target rules for targets named circle
 
 # Build rule for target.
@@ -595,6 +621,7 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... feibo"
 	@echo "... pingf3"
 	@echo "... pingf2"
 	@echo "... pingf"
@@ -614,6 +641,7 @@ help:
 	@echo "... rank"
 	@echo "... sqr1"
 	@echo "... tixing"
+	@echo "... 4"
 	@echo "... circle"
 	@echo "... side"
 	@echo "... if1"

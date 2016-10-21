@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/feipo2.dir/feipo2.cpp.o  -o feipo2  -L/usr/local/lib -rdynamic 

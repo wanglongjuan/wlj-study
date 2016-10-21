@@ -51,6 +51,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "test/CMakeFiles/feibo.dir/DependInfo.cmake"
   "test/CMakeFiles/pingf3.dir/DependInfo.cmake"
   "test/CMakeFiles/pingf2.dir/DependInfo.cmake"
   "test/CMakeFiles/pingf.dir/DependInfo.cmake"
@@ -70,6 +71,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "test/CMakeFiles/rank.dir/DependInfo.cmake"
   "test/CMakeFiles/sqr1.dir/DependInfo.cmake"
   "test/CMakeFiles/tixing.dir/DependInfo.cmake"
+  "test/CMakeFiles/4.dir/DependInfo.cmake"
   "test/CMakeFiles/circle.dir/DependInfo.cmake"
   "test/CMakeFiles/side.dir/DependInfo.cmake"
   "test/CMakeFiles/if1.dir/DependInfo.cmake"
