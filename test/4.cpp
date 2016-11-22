@@ -1,16 +1,28 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
+long fact(int n)
+{
+    if(n < 0 ) return 0;
+    int f = 1;
+    while( n > 1)
+        f *= n--;
+    return f;
+}
+
+long perm(int n , int k)
+{
+    if( n < 0 || k < 0 || k > n) return 0;
+    return fact(n)/fact(n-k);
+}
+
+
 int main()
 {
-    int m , n ,k=0 ;
-    cout << " geidingyigezhengzhengshu : ";
-    cin >> m;
-    while( m > 0)
+    for(int i = -1; i < 8 ; i++)
     {
-        n = m%10;
-        m/=10;
-        k=k*10+n;
-        cout << k<<endl;
+        for(int j = -1; j < i ; j++)
+            cout << " " << perm(i , j);
+        cout << endl;
     }
-    cout << k << endl;
 }

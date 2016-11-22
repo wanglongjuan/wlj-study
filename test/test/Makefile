@@ -155,6 +155,51 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/7.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/7.dir/rule
+.PHONY : test/CMakeFiles/7.dir/rule
+
+# Convenience name for target.
+7 : test/CMakeFiles/7.dir/rule
+
+.PHONY : 7
+
+# fast build rule for target.
+7/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/7.dir/build.make test/CMakeFiles/7.dir/build
+.PHONY : 7/fast
+
+# Convenience name for target.
+test/CMakeFiles/zhongzhihs.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhongzhihs.dir/rule
+.PHONY : test/CMakeFiles/zhongzhihs.dir/rule
+
+# Convenience name for target.
+zhongzhihs: test/CMakeFiles/zhongzhihs.dir/rule
+
+.PHONY : zhongzhihs
+
+# fast build rule for target.
+zhongzhihs/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/zhongzhihs.dir/build.make test/CMakeFiles/zhongzhihs.dir/build
+.PHONY : zhongzhihs/fast
+
+# Convenience name for target.
+test/CMakeFiles/6.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/6.dir/rule
+.PHONY : test/CMakeFiles/6.dir/rule
+
+# Convenience name for target.
+6 : test/CMakeFiles/6.dir/rule
+
+.PHONY : 6
+
+# fast build rule for target.
+6/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/6.dir/build.make test/CMakeFiles/6.dir/build
+.PHONY : 6/fast
+
+# Convenience name for target.
 test/CMakeFiles/feibo.dir/rule:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/feibo.dir/rule
 .PHONY : test/CMakeFiles/feibo.dir/rule
@@ -183,6 +228,21 @@ pingf3: test/CMakeFiles/pingf3.dir/rule
 pingf3/fast:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/pingf3.dir/build.make test/CMakeFiles/pingf3.dir/build
 .PHONY : pingf3/fast
+
+# Convenience name for target.
+test/CMakeFiles/7t.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/7t.dir/rule
+.PHONY : test/CMakeFiles/7t.dir/rule
+
+# Convenience name for target.
+7t: test/CMakeFiles/7t.dir/rule
+
+.PHONY : 7t
+
+# fast build rule for target.
+7t/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/7t.dir/build.make test/CMakeFiles/7t.dir/build
+.PHONY : 7t/fast
 
 # Convenience name for target.
 test/CMakeFiles/pingf2.dir/rule:
@@ -228,6 +288,21 @@ jiecheng: test/CMakeFiles/jiecheng.dir/rule
 jiecheng/fast:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/build
 .PHONY : jiecheng/fast
+
+# Convenience name for target.
+test/CMakeFiles/5.dir/rule:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/5.dir/rule
+.PHONY : test/CMakeFiles/5.dir/rule
+
+# Convenience name for target.
+5 : test/CMakeFiles/5.dir/rule
+
+.PHONY : 5
+
+# fast build rule for target.
+5/fast:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/5.dir/build.make test/CMakeFiles/5.dir/build
+.PHONY : 5/fast
 
 # Convenience name for target.
 test/CMakeFiles/3.dir/rule:
@@ -759,6 +834,114 @@ arctan/fast:
 4.cpp.s:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/4.dir/build.make test/CMakeFiles/4.dir/4.cpp.s
 .PHONY : 4.cpp.s
+
+5.o: 5.cpp.o
+
+.PHONY : 5.o
+
+# target to build an object file
+5.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/5.dir/build.make test/CMakeFiles/5.dir/5.cpp.o
+.PHONY : 5.cpp.o
+
+5.i: 5.cpp.i
+
+.PHONY : 5.i
+
+# target to preprocess a source file
+5.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/5.dir/build.make test/CMakeFiles/5.dir/5.cpp.i
+.PHONY : 5.cpp.i
+
+5.s: 5.cpp.s
+
+.PHONY : 5.s
+
+# target to generate assembly for a file
+5.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/5.dir/build.make test/CMakeFiles/5.dir/5.cpp.s
+.PHONY : 5.cpp.s
+
+6.o: 6.cpp.o
+
+.PHONY : 6.o
+
+# target to build an object file
+6.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/6.dir/build.make test/CMakeFiles/6.dir/6.cpp.o
+.PHONY : 6.cpp.o
+
+6.i: 6.cpp.i
+
+.PHONY : 6.i
+
+# target to preprocess a source file
+6.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/6.dir/build.make test/CMakeFiles/6.dir/6.cpp.i
+.PHONY : 6.cpp.i
+
+6.s: 6.cpp.s
+
+.PHONY : 6.s
+
+# target to generate assembly for a file
+6.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/6.dir/build.make test/CMakeFiles/6.dir/6.cpp.s
+.PHONY : 6.cpp.s
+
+7.o: 7.cpp.o
+
+.PHONY : 7.o
+
+# target to build an object file
+7.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/7.dir/build.make test/CMakeFiles/7.dir/7.cpp.o
+.PHONY : 7.cpp.o
+
+7.i: 7.cpp.i
+
+.PHONY : 7.i
+
+# target to preprocess a source file
+7.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/7.dir/build.make test/CMakeFiles/7.dir/7.cpp.i
+.PHONY : 7.cpp.i
+
+7.s: 7.cpp.s
+
+.PHONY : 7.s
+
+# target to generate assembly for a file
+7.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/7.dir/build.make test/CMakeFiles/7.dir/7.cpp.s
+.PHONY : 7.cpp.s
+
+7t.o: 7t.cpp.o
+
+.PHONY : 7t.o
+
+# target to build an object file
+7t.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/7t.dir/build.make test/CMakeFiles/7t.dir/7t.cpp.o
+.PHONY : 7t.cpp.o
+
+7t.i: 7t.cpp.i
+
+.PHONY : 7t.i
+
+# target to preprocess a source file
+7t.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/7t.dir/build.make test/CMakeFiles/7t.dir/7t.cpp.i
+.PHONY : 7t.cpp.i
+
+7t.s: 7t.cpp.s
+
+.PHONY : 7t.s
+
+# target to generate assembly for a file
+7t.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/7t.dir/build.make test/CMakeFiles/7t.dir/7t.cpp.s
+.PHONY : 7t.cpp.s
 
 CGAL_test.o: CGAL_test.cpp.o
 
@@ -1624,6 +1807,33 @@ xing.cpp.s:
 	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/xing.dir/build.make test/CMakeFiles/xing.dir/xing.cpp.s
 .PHONY : xing.cpp.s
 
+zhongzhihs.o: zhongzhihs.cpp.o
+
+.PHONY : zhongzhihs.o
+
+# target to build an object file
+zhongzhihs.cpp.o:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/zhongzhihs.dir/build.make test/CMakeFiles/zhongzhihs.dir/zhongzhihs.cpp.o
+.PHONY : zhongzhihs.cpp.o
+
+zhongzhihs.i: zhongzhihs.cpp.i
+
+.PHONY : zhongzhihs.i
+
+# target to preprocess a source file
+zhongzhihs.cpp.i:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/zhongzhihs.dir/build.make test/CMakeFiles/zhongzhihs.dir/zhongzhihs.cpp.i
+.PHONY : zhongzhihs.cpp.i
+
+zhongzhihs.s: zhongzhihs.cpp.s
+
+.PHONY : zhongzhihs.s
+
+# target to generate assembly for a file
+zhongzhihs.cpp.s:
+	cd /home/wlj/repository/wlj-study/test && $(MAKE) -f test/CMakeFiles/zhongzhihs.dir/build.make test/CMakeFiles/zhongzhihs.dir/zhongzhihs.cpp.s
+.PHONY : zhongzhihs.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1634,11 +1844,16 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... 7"
+	@echo "... zhongzhihs"
+	@echo "... 6"
 	@echo "... feibo"
 	@echo "... pingf3"
+	@echo "... 7t"
 	@echo "... pingf2"
 	@echo "... pingf"
 	@echo "... jiecheng"
+	@echo "... 5"
 	@echo "... 3"
 	@echo "... daoshu"
 	@echo "... dis"
@@ -1680,6 +1895,18 @@ help:
 	@echo "... 4.o"
 	@echo "... 4.i"
 	@echo "... 4.s"
+	@echo "... 5.o"
+	@echo "... 5.i"
+	@echo "... 5.s"
+	@echo "... 6.o"
+	@echo "... 6.i"
+	@echo "... 6.s"
+	@echo "... 7.o"
+	@echo "... 7.i"
+	@echo "... 7.s"
+	@echo "... 7t.o"
+	@echo "... 7t.i"
+	@echo "... 7t.s"
 	@echo "... CGAL_test.o"
 	@echo "... CGAL_test.i"
 	@echo "... CGAL_test.s"
@@ -1776,6 +2003,9 @@ help:
 	@echo "... xing.o"
 	@echo "... xing.i"
 	@echo "... xing.s"
+	@echo "... zhongzhihs.o"
+	@echo "... zhongzhihs.i"
+	@echo "... zhongzhihs.s"
 .PHONY : help
 
 

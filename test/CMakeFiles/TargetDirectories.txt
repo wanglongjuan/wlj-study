@@ -20,11 +20,16 @@
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/list_install_components.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/rebuild_cache.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/edit_cache.dir
+/home/wlj/repository/wlj-study/test/test/CMakeFiles/7.dir
+/home/wlj/repository/wlj-study/test/test/CMakeFiles/zhongzhihs.dir
+/home/wlj/repository/wlj-study/test/test/CMakeFiles/6.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/feibo.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/pingf3.dir
+/home/wlj/repository/wlj-study/test/test/CMakeFiles/7t.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/pingf2.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/pingf.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/jiecheng.dir
+/home/wlj/repository/wlj-study/test/test/CMakeFiles/5.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/3.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/daoshu.dir
 /home/wlj/repository/wlj-study/test/test/CMakeFiles/dis.dir

@@ -155,6 +155,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named 7
+
+# Build rule for target.
+7 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 7
+.PHONY : 7
+
+# fast build rule for target.
+7/fast:
+	$(MAKE) -f test/CMakeFiles/7.dir/build.make test/CMakeFiles/7.dir/build
+.PHONY : 7/fast
+
+#=============================================================================
+# Target rules for targets named zhongzhihs
+
+# Build rule for target.
+zhongzhihs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zhongzhihs
+.PHONY : zhongzhihs
+
+# fast build rule for target.
+zhongzhihs/fast:
+	$(MAKE) -f test/CMakeFiles/zhongzhihs.dir/build.make test/CMakeFiles/zhongzhihs.dir/build
+.PHONY : zhongzhihs/fast
+
+#=============================================================================
+# Target rules for targets named 6
+
+# Build rule for target.
+6 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 6
+.PHONY : 6
+
+# fast build rule for target.
+6/fast:
+	$(MAKE) -f test/CMakeFiles/6.dir/build.make test/CMakeFiles/6.dir/build
+.PHONY : 6/fast
+
+#=============================================================================
 # Target rules for targets named feibo
 
 # Build rule for target.
@@ -179,6 +218,19 @@ pingf3: cmake_check_build_system
 pingf3/fast:
 	$(MAKE) -f test/CMakeFiles/pingf3.dir/build.make test/CMakeFiles/pingf3.dir/build
 .PHONY : pingf3/fast
+
+#=============================================================================
+# Target rules for targets named 7t
+
+# Build rule for target.
+7t: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 7t
+.PHONY : 7t
+
+# fast build rule for target.
+7t/fast:
+	$(MAKE) -f test/CMakeFiles/7t.dir/build.make test/CMakeFiles/7t.dir/build
+.PHONY : 7t/fast
 
 #=============================================================================
 # Target rules for targets named pingf2
@@ -218,6 +270,19 @@ jiecheng: cmake_check_build_system
 jiecheng/fast:
 	$(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/build
 .PHONY : jiecheng/fast
+
+#=============================================================================
+# Target rules for targets named 5
+
+# Build rule for target.
+5 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 5
+.PHONY : 5
+
+# fast build rule for target.
+5/fast:
+	$(MAKE) -f test/CMakeFiles/5.dir/build.make test/CMakeFiles/5.dir/build
+.PHONY : 5/fast
 
 #=============================================================================
 # Target rules for targets named 3
@@ -621,11 +686,16 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... 7"
+	@echo "... zhongzhihs"
+	@echo "... 6"
 	@echo "... feibo"
 	@echo "... pingf3"
+	@echo "... 7t"
 	@echo "... pingf2"
 	@echo "... pingf"
 	@echo "... jiecheng"
+	@echo "... 5"
 	@echo "... 3"
 	@echo "... daoshu"
 	@echo "... dis"
