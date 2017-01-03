@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/arctan.dir/arctan.cpp.o  -o arctan  -L/usr/local/lib -rdynamic 

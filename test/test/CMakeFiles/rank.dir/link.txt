@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/rank.dir/rank.cpp.o  -o rank  -L/usr/local/lib -rdynamic 

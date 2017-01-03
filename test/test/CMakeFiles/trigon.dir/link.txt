@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/trigon.dir/trigon.cpp.o  -o trigon  -L/usr/local/lib -rdynamic 

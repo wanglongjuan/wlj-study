@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/xing.dir/xing.cpp.o  -o xing  -L/usr/local/lib -rdynamic 

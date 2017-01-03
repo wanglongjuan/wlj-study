@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/3.dir/3.cpp.o  -o 3  -L/usr/local/lib -rdynamic 

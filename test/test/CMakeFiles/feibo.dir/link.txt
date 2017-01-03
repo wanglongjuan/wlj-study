@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/feibo.dir/feibo.cpp.o  -o feibo  -L/usr/local/lib -rdynamic 

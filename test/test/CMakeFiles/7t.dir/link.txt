@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/7t.dir/7t.cpp.o  -o 7t  -L/usr/local/lib -rdynamic 

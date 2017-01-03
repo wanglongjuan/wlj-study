@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/daoshu.dir/daoshu.cpp.o  -o daoshu  -L/usr/local/lib -rdynamic 

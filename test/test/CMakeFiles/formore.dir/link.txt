@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/formore.dir/formore.cpp.o  -o formore  -L/usr/local/lib -rdynamic 

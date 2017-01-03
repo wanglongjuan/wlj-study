@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/pingf2.dir/pingf2.cpp.o  -o pingf2  -L/usr/local/lib -rdynamic 

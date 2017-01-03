@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/circle.dir/circle.cpp.o  -o circle  -L/usr/local/lib -rdynamic 
