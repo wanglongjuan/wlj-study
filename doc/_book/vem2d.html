@@ -1,0 +1,679 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>vem2d · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="vim_way.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="python-study.html">
+            
+                <a href="python-study.html">
+            
+                    
+                    python study
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="10-2.html">
+            
+                <a href="10-2.html">
+            
+                    
+                    10-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="vim_way.html">
+            
+                <a href="vim_way.html">
+            
+                    
+                    vim study
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="VEM 基础理论- 2d.html">
+            
+                <a href="VEM 基础理论- 2d.html">
+            
+                    
+                    VEM 基础理论- 2d
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="python-study.html">
+            
+                <a href="python-study.html">
+            
+                    
+                    python-study
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="vim_way.html">
+            
+                <a href="vim_way.html">
+            
+                    
+                    vim_way
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="vem2d.html">
+            
+                <a href="vem2d.html">
+            
+                    
+                    vem2d
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >vem2d</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E8C;&#x7EF4;&#x865A;&#x5355;&#x5143;&#x6CD5;">&#x4E8C;&#x7EF4;&#x865A;&#x5355;&#x5143;&#x6CD5;</h1><h2 id="1-&#x7B26;&#x53F7;">1. &#x7B26;&#x53F7;</h2><table>
+<thead>
+<tr><th>Notation</th>
+<th>Meaning</th>
+</tr></thead><tbody>
+<tr><td>$$\mathbb{R}^2$$</td>
+<td>&#x4E8C;&#x7EF4;&#x6B27;&#x6C0F;&#x7A7A;&#x95F4;</td>
+</tr><tr><td>$$\mathcal{D}$$</td>
+<td>&#x4E8C;&#x7EF4;&#x533A;&#x57DF;</td>
+</tr><tr><td>$$\bf{x}_{\mathcal{D}}$$</td>
+<td>&#x533A;&#x57DF; $$D$$ &#x7684; &#x91CD;&#x5FC3;</td>
+</tr><tr><td>$$\mathcal{P}_k(\mathcal{D})$$</td>
+<td>&#x533A;&#x57DF; $$D$$ &#x4E0A; $$k$$&#x6B21;&#x591A;&#x9879;&#x5F0F;&#x7A7A;&#x95F4;</td>
+</tr><tr><td>$$E$$</td>
+<td>&#x591A;&#x8FB9;&#x5F62;&#x533A;&#x57DF;</td>
+</tr><tr><td>$$N^V$$</td>
+<td>$$E$$ &#x7684;&#x9876;&#x70B9;&#x4E2A;&#x6570;</td>
+</tr><tr><td>$$\bf{x}_i$$</td>
+<td>&#x7B2C; $$i$$ &#x4E2A;&#x9876;&#x70B9;&#x5750;&#x6807;</td>
+</tr><tr><td>$$</td>
+<td>E</td>
+<td>$$</td>
+<td>$$E$$ &#x7684;&#x9762;&#x79EF;</td>
+</tr><tr><td>$$W=\begin{pmatrix}0&amp;-1\\1 &amp; 0 \end{pmatrix}$$</td>
+<td>&#x65CB;&#x8F6C;&#x77E9;&#x9635;, &#x4F5C;&#x7528;&#x5728;&#x4E8C;&#x7EF4;&#x5217;&#x5411;&#x91CF;&#x4E0A;&#x8868;&#x793A;&#x9006;&#x65F6;&#x9488;&#x65CB;&#x8F6C;&#x8BE5;&#x5411;&#x91CF;$$90^\circ$$</td>
+</tr><tr><td>$$\alpha=(\alpha_1, \alpha_2)$$</td>
+<td>&#x4E8C;&#x91CD;&#x6307;&#x6807;</td>
+</tr><tr><td>$$\mathcal{M}_k(\mathcal{D})$$</td>
+<td>&#x5355;&#x9879;&#x5F0F;&#x7A7A;&#x95F4;</td>
+</tr><tr><td>$$V_k(E)$$</td>
+<td>$$k$$ &#x6B21;&#x7684;&#x865A;&#x5355;&#x5143;&#x7A7A;&#x95F4;</td>
+</tr><tr><td>$$\Pi^\nabla_{*,E}: V_k(E) \rightarrow \mathcal{P}_k(E)$$</td>
+<td>$$k$$ &#x6B21;&#x865A;&#x5355;&#x5143;&#x7A7A;&#x95F4;&#x5230; $$k$$ &#x6B21;&#x591A;&#x9879;&#x5F0F;&#x7A7A;&#x95F4;&#x7684;&#x7684;&#x6295;&#x5F71;&#x7B97;&#x5B50;</td>
+</tr><tr><td>$$\Pi^\nabla_E: V_k(E) \rightarrow V_k(E) $$</td>
+<td>&#x6295;&#x5F71;&#x7B97;&#x5B50;</td>
+</tr><tr><td>$$ n_k = (k+1)(k+2)/2$$</td>
+<td>$$k$$ &#x6B21;&#x591A;&#x9879;&#x5F0F;&#x7A7A;&#x95F4;&#x7EF4;&#x6570;</td>
+</tr><tr><td>$$ N_k = \text{dim} V_k(E) = N^Vk+(k-1)k/2$$</td>
+<td>$$k$$ &#x6B21;&#x865A;&#x5355;&#x5143;&#x7A7A;&#x95F4;&#x7684;&#x7EF4;&#x6570;</td>
+</tr></tbody></table>
+
+<h2 id="2-&#x6A21;&#x578B;">2. &#x6A21;&#x578B;</h2><p>$$
+\begin{cases}
+-\Delta u = f, &amp; \text{ in } \Omega \
+u = g, &amp; \text{ on } \partial\Omega 
+\end{cases}</p><p>$$</p><p>&#x627E;&#x5230; $$ u \in H^1_g(\Omega)$$:</p><p>$$
+(\nabla u, \nabla v) = (f, v),\quad\forall v in H^1_0(\Omega)</p><p>$$</p><h2 id="&#x5355;&#x9879;&#x5F0F;&#x7A7A;&#x95F4;">&#x5355;&#x9879;&#x5F0F;&#x7A7A;&#x95F4;</h2><table>
+<thead>
+<tr><th>$$\alpha$$</th>
+<th>$$n_k$$</th>
+<th>&#x5355;&#x9879;&#x5F0F;  $$m_\alpha$$</th>
+<th>$$\nabla m_{\alpha}$$</th>
+</tr></thead><tbody>
+<tr><td>(0, 0)</td>
+<td>1</td>
+<td>1</td>
+<td>(0, 0)</td>
+</tr><tr><td>(1, 0)</td>
+<td>2</td>
+<td>$$\frac{x - x_E}{h_E}$$</td>
+<td>$$(\frac{1}{h_E}, 0)$$</td>
+</tr><tr><td>(0, 1)</td>
+<td>3</td>
+<td>$$\frac{y - y_E}{h_E}$$</td>
+<td>$$(0, \frac{1}{h_E})$$</td>
+</tr><tr><td>(2, 0)</td>
+<td>4</td>
+<td>$$(\frac{x - x_E}{h_E})^2$$</td>
+<td>$$(\frac{2(x - x_E)}{h_E^2}, 0)$$</td>
+</tr><tr><td>(1, 1)</td>
+<td>5</td>
+<td>$$\frac{(x - x_E)(y - y_E)}{h_E^2}$$</td>
+<td>$$(\frac{y - x_E}{h_E^2}, \frac{x - x_E}{h_E^2})$$</td>
+</tr><tr><td>(0, 2)</td>
+<td>6</td>
+<td>$$(\frac{y - y_E}{h_E})^2$$</td>
+<td>$$(0, \frac{2(y - y_E)}{h_E^2})$$</td>
+</tr><tr><td>(3, 0)</td>
+<td>7</td>
+<td>$$(\frac{x - x_E}{h_E})^3$$</td>
+<td>$$(\frac{3(x - x_E)^2}{h_E^3}, 0)$$</td>
+</tr><tr><td>(2, 1)</td>
+<td>8</td>
+<td>$$\frac{(x - x_E)^2(y - y_E)}{h_E^3}$$</td>
+<td>$$(\frac{2(x - x_E)(y - y_E)}{h_E^3}, \frac{(x - x_E)^2}{h_E^3})$$</td>
+</tr><tr><td>(1, 2)</td>
+<td>9</td>
+<td>$$\frac{(x - x_E)(y - y_E)^2}{h_E^3}$$</td>
+<td>$$(\frac{(y - y_E)^2}{h_E^3}, \frac{2(x - x_E)(y - y_E)}{h_E^3})$$</td>
+</tr><tr><td>(0, 3)</td>
+<td>10</td>
+<td>$$(\frac{y - y_E}{h_E})^3$$</td>
+<td>$$(0, \frac{3(y - y_E)^2}{h_E^3})$$</td>
+</tr></tbody></table>
+
+<h2 id="3-&#x6295;&#x5F71;&#x7B97;&#x5B50;">3. &#x6295;&#x5F71;&#x7B97;&#x5B50;</h2><p>&#x5B9A;&#x4E49; $$\Pi^\nabla: V<em>k(E)\rightarrow \mathcal{P}_k(E)$$ &#x5982;&#x4E0B;: &#x7ED9;&#x5B9A;  $$ v_h \in
+V_k(E)$$, &#x627E;&#x5230; $$\Pi^\nabla v_h \in \mathcal{P}</em>{E}$$ &#x6EE1;&#x8DB3;:</p><p>$$
+\begin{equation}
+(\nabla \Pi^\nabla v<em>h, \nabla p_k) = (\nabla v_h, \nabla p_k), \forall p_k\in\mathcal{P}</em>{E}
+\end{equation}</p><p>$$</p><p>&#x6295;&#x5F71; $$\Pi^\nabla v_h$$ &#x5173;&#x4E8E;&#x5E38;&#x6570;&#x552F;&#x4E00;.  &#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x6295;&#x5F71; $$ P_0: V_k(E) \rightarrow
+\mathcal{P}_0(E)$$:</p><p>$$
+\begin{equation}
+P_0(\Pi^\nabla v_h - v_h) = 0
+\end{equation}</p><p>$$</p><p>&#x5177;&#x4F53;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;:</p><p>$$
+\begin{align}
+P<em>0 v_h :=&amp; \frac{1}{N^V}\sum</em>{i=1}^{N^V} v<em>h(x_i)\text{ for } k=1\
+P_0 v_h :=&amp; \frac{1}{|E|} \int</em>{E}v_h = \frac{1}{E} (1, v_h)_E\text{ for } k\geq 2
+\end{align}</p><p>$$</p><p>&#x4E0B;&#x9762;&#x8003;&#x8651;&#x4E0A;&#x8FF0;&#x6295;&#x5F71;&#x7684;&#x77E9;&#x9635;&#x8868;&#x793A;&#x5F62;&#x5F0F;:</p><p>$$
+\begin{equation}
+G = 
+\begin{pmatrix}
+P<em>0 m_1 &amp; P_0m_2 &amp; \ldots &amp; P_0 m</em>{n<em>k} \
+0 &amp; (\nabla m_2, \nabla m_2)</em>{0,E} &amp; \cdots &amp; (\nabla m<em>2, \nabla m</em>{n<em>k})</em>{0,E}\
+\cdots &amp; \cdots &amp; \cdots &amp; \cdots \
+0 &amp; (\nabla m<em>{n_k}, \nabla m_2)</em>{0,E} &amp; \cdots &amp; (\nabla m<em>{n_k}, \nabla m</em>{n<em>k})</em>{0,E}
+\end{pmatrix}
+\end{equation}</p><p>$$</p><p>$$
+\begin{aligned}
+B =&amp; 
+\begin{pmatrix}
+P<em>0\varphi_1 &amp; \cdots &amp; P_0\varphi</em>{N<em>k}\
+(\nabla m_2, \nabla\varphi_1)</em>{0, E} &amp; \cdots &amp; (\nabla m<em>2, \nabla\varphi</em>{N<em>k})</em>{0, E}\
+\cdots &amp; \cdots &amp; \cdots \
+(\nabla m<em>{n_k}, \nabla\varphi_1)</em>{0, E} &amp; \cdots &amp; (\nabla m<em>{n_k}, \nabla\varphi</em>{N<em>k})</em>{0, E}\
+\end{pmatrix}\
+=&amp; \begin{pmatrix}
+P<em>0\varphi_1 &amp; \cdots &amp; P_0\varphi</em>{N<em>k}\
+-(\Delta m_2,\varphi_1)</em>{0, E} &amp; \cdots &amp; -(\Delta m<em>2,\varphi</em>{N<em>k})</em>{0, E}\
+\cdots &amp; \cdots &amp; \cdots \
+-(\Delta m<em>{n_k}, \varphi_1)</em>{0, E} &amp; \cdots &amp; -(\Delta m<em>{n_k},\varphi</em>{N<em>k})</em>{0, E}\
+\end{pmatrix}\
+&amp; +\begin{pmatrix}
+0 &amp; \cdots &amp; 0\
+(\frac{ \partial m<em>2}{\partial n},\varphi_1)</em>{\partial E} &amp; \cdots &amp; (\frac{\partial m<em>2}{\partial n},\varphi</em>{N<em>k})</em>{\partial E}\
+\cdots &amp; \cdots &amp; \cdots \
+(\frac{\partial m<em>{n_k}}{\partial n}, \varphi_1)</em>{\partial E} &amp; \cdots &amp; (\frac{\partial m<em>{n_k}}{\partial n}, \varphi</em>{N<em>k})</em>{\partial E}\
+\end{pmatrix}\
+\end{aligned}</p><p>$$</p><p>$$
+\begin{equation}
+D = \begin{pmatrix}
+dof<em>1(m_1) &amp; dof_1(m_2) &amp; \cdots &amp; dof_1(m</em>{n<em>k}) \
+dof_2(m_1) &amp; dof_2(m_2) &amp; \cdots &amp; dof_2(m</em>{n<em>k}) \
+\cdots &amp; \cdots &amp; \cdots &amp; \cdots \
+dof</em>{N<em>K}(m_1) &amp; dof</em>{N<em>K}(m_2) &amp; \cdots &amp; dof</em>{N<em>K}(m</em>{n_k}) 
+\end{pmatrix}
+\end{equation}</p><p>$$</p><p>$$\Pi^\nabla_*: V_k(E)\rightarrow \mathcal{P}_k(E)\subset V_k(E)$$ &#x7684;&#x77E9;&#x9635;&#x8868;&#x793A;&#x5982;&#x4E0B;:</p><p>$$\Pi^\nabla_* = G^{-1}B$$</p><p>&#x7531;&#x4E8E;</p><p>$$
+\begin{equation}
+\begin{aligned}
+\Pi^{\nabla} (\varphi<em>1, \varphi_2, \cdots, \varphi</em>{N<em>K}) =&amp; (m_1, m_2, \cdots, m</em>{n<em>k}) G^{-1}B\
+= &amp;(\varphi_1, \varphi_2, \cdots, \varphi</em>{N_K})DG^{-1}B
+\end{aligned}
+\end{equation}</p><p>$$</p><p>&#x6240;&#x4EE5; $$\Pi^{\nabla}: V_k(E)\rightarrow V_k(E) $$ &#x7684;&#x77E9;&#x9635;&#x8868;&#x793A;&#x5982;&#x4E0B;:</p><p>$$
+\begin{equation}
+\mathbf{\Pi}^{\nabla}=DG^{-1}B
+\end{equation}</p><p>$$</p><p>&#x53E6;&#x5916;, &#x6613;&#x8BC1; $$G = BD$$</p><p>$$
+\begin{aligned}
+&amp;\begin{pmatrix}
+(\nabla\Pi^\nabla\varphi<em>1, \nabla\Pi^\nabla\varphi_1) &amp; (\nabla\Pi^\nabla\varphi_1, \nabla\Pi^\nabla\varphi_2) &amp; \cdots &amp; (\nabla\Pi^\nabla\varphi_1, \nabla\Pi^\nabla\varphi</em>{N<em>K})\
+(\nabla\Pi^\nabla\varphi_2, \nabla\Pi^\nabla\varphi_1) &amp; (\nabla\Pi^\nabla\varphi_2, \nabla\Pi^\nabla\varphi_2) &amp; \cdots &amp; (\nabla\Pi^\nabla\varphi_2, \nabla\Pi^\nabla\varphi</em>{N<em>K})\
+\cdots &amp; \cdots &amp; \cdots &amp; \cdots \
+(\nabla\Pi^\nabla\varphi</em>{N<em>K}, \nabla\Pi^\nabla\varphi_1) &amp; (\nabla\Pi^\nabla\varphi</em>{N<em>K}, \nabla\Pi^\nabla\varphi_2) &amp; \cdots &amp; (\nabla\Pi^\nabla\varphi</em>{N<em>K}, \nabla\Pi^\nabla\varphi</em>{N_K})\
+\end{pmatrix}\</p><p>=&amp;\nabla\Pi^\nabla \begin{pmatrix} \varphi<em>1\ \varphi_2 \ \vdots\\varphi</em>{n<em>k} \end{pmatrix} \left(\nabla\Pi^\nabla \begin{pmatrix} \varphi_1\ \varphi_2 \ \vdots\\varphi</em>{n<em>k} \end{pmatrix} \right)^T \
+=&amp; [\Pi</em><em>^\nabla]^T \begin{pmatrix}
+\nabla m<em>1^T \ \nabla m_2^T \\vdots\ \nabla m</em>{n<em>k}^T
+\end{pmatrix}
+\begin{pmatrix}
+\nabla m_1 &amp; \nabla m_2 &amp; \cdots &amp; \nabla m</em>{n<em>k}
+\end{pmatrix} \Pi</em></em>^\nabla \
+= &amp; [\Pi_*^\nabla]^T \tilde{G} \Pi_*^\nabla
+\end{aligned}</p><p>$$</p><p>$$
+\begin{equation}
+K<em>E^h = [\Pi</em><em>^\nabla]^T \tilde{G} \Pi_</em>^\nabla + (I - \Pi^\nabla)^T(I - \Pi^\nabla)
+\end{equation}</p><p>$$</p><h2 id="4l2&#x6295;&#x5F71;">4.$$L^2$$&#x6295;&#x5F71;</h2><p>$$
+\begin{equation}
+H = \begin{pmatrix}
+(m<em>1, m_1) &amp; (m_1, m_2) &amp; \cdots &amp; (m_1, m</em>{n<em>k}) \
+(m_2, m_1) &amp; (m_2, m_2) &amp; \cdots &amp; (m_2, m</em>{n<em>k}) \
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \ 
+(m</em>{n<em>k}, m_1) &amp; (m</em>{n<em>k}, m_2) &amp; \cdots &amp; (m</em>{n<em>k}, m</em>{n_k}) 
+\end{pmatrix}
+\end{equation}</p><p>$$</p><p>$$
+\begin{equation}
+\begin{aligned}
+C = &amp; \begin{pmatrix}
+(m<em>1, \varphi_1) &amp; (m_1, \varphi_2) &amp; \cdots &amp; (m_1, \varphi</em>{N<em>K}) \
+(m_2, \varphi_1) &amp; (m_2, \varphi_2) &amp; \cdots &amp; (m_2, \varphi</em>{N<em>K})\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \
+(m</em>{n<em>k}, \varphi_1) &amp; (m</em>{n<em>k}, \varphi_2) &amp; \cdots &amp; (m</em>{n<em>k}, \varphi</em>{N<em>K})
+\end{pmatrix}\
+=&amp; \begin{pmatrix}
+C</em>{n<em>{k-2}\times kN^V} &amp; C</em>{n<em>{k-2}\times n</em>{k-2}}\
+C<em>{(n</em>{k} - n<em>{k-2})\times kN^V} &amp; C</em>{(n<em>{k} - n</em>{k-2})\times n_{k-2}}
+\end{pmatrix}
+\end{aligned}
+\end{equation}</p><p>$$</p><p>&#x5176;&#x4E2D;:</p><p>$$
+\begin{equation}
+\begin{aligned}
+C<em>{n</em>{k-2}\times kN^V} = &amp; 0 \
+C<em>{n</em>{k-2}\times n<em>{k-2}} = &amp;|E| I\
+(C</em>{(n<em>{k} - n</em>{k-2})\times kN^V}, C<em>{(n</em>{k} - n<em>{k-2})\times n</em>{k-2}}) = &amp; HG^{-1}B[n_{k-2}+1:n_k,1:N_K]
+\end{aligned}
+\end{equation}</p><p>$$</p><p>$$
+\begin{equation}
+C<em>{\alpha i} = 
+\begin{cases}
+|E|, &amp;i = kN^V+\alpha\
+(HG^{-1}B)</em>{\alpha i}, &amp;n_{k-2} &lt; \alpha \leq n_k\
+0, &amp; \text{others}
+\end{cases}
+\end{equation}</p><p>$$</p><p>&#x8BB0;</p><p>$$\Pi^0: V<em>k(E) \rightarrow V_k(E)$$ &#x548C; $$\Pi^0</em>*: V_k(E) \rightarrow \mathcal{P}_k(E)$$</p><p>$$
+\begin{equation}
+\Pi^0 = DH^{-1}C = D\Pi^0_*
+\end{equation}</p><p>$$</p><h2 id="4-&#x8D28;&#x91CF;&#x77E9;&#x9635;">4. &#x8D28;&#x91CF;&#x77E9;&#x9635;</h2><p>$$
+\begin{equation}
+M_E^h = C^TH^{-1}C + |E|(I - \Pi^0)^T(I - \Pi^0)
+\end{equation}</p><p>$$</p><h2 id="5-&#x5DE6;&#x7AEF;&#x9879;">5. &#x5DE6;&#x7AEF;&#x9879;</h2><p>$$
+\begin{equation}
+F = \begin{pmatrix}
+(f, \Pi^0<em>k\varphi_1) \
+(f, \Pi^0_k\varphi_2) \
+\vdots\
+(f, \Pi^0_k\varphi</em>{N^{dof}})
+\end{pmatrix}
+=(\Pi^0<em>*)^T\begin{pmatrix}
+(f, m_1)\ (f, m_2) \ \vdots \ (f, m</em>{n_k})
+\end{pmatrix}
+\end{equation}</p><p>$$</p><h2 id="6-2&#x7EF4;&#x7A7A;&#x95F4;&#x4E2D;&#x7684;&#x4F8B;&#x5B50;">6. 2&#x7EF4;&#x7A7A;&#x95F4;&#x4E2D;&#x7684;&#x4F8B;&#x5B50;</h2><h3 id="61-&#x5355;&#x9879;&#x5F0F;&#x79EF;&#x5206;">6.1 &#x5355;&#x9879;&#x5F0F;&#x79EF;&#x5206;</h3><table>
+<thead>
+<tr><th>$$\alpha$$</th>
+<th>$$n_k$$</th>
+<th>Momonial $$m_\alpha$$</th>
+<th>$$\nabla m_{\alpha}$$</th>
+</tr></thead><tbody>
+<tr><td>(0, 0)</td>
+<td>1</td>
+<td>1</td>
+<td>(0, 0)</td>
+</tr><tr><td>(1, 0)</td>
+<td>2</td>
+<td>$$\frac{x - x_E}{h_E}$$</td>
+<td>$$(\frac{1}{h_E}, 0)$$</td>
+</tr><tr><td>(0, 1)</td>
+<td>3</td>
+<td>$$\frac{y - y_E}{h_E}$$</td>
+<td>$$(0, \frac{1}{h_E})$$</td>
+</tr><tr><td>(2, 0)</td>
+<td>4</td>
+<td>$$(\frac{x - x_E}{h_E})^2$$</td>
+<td>$$(\frac{2(x - x_E)}{h_E^2}, 0)$$</td>
+</tr><tr><td>(1, 1)</td>
+<td>5</td>
+<td>$$\frac{(x - x_E)(y - y_E)}{h_E^2}$$</td>
+<td>$$(\frac{y - x_E}{h_E^2}, \frac{x - x_E}{h_E^2})$$</td>
+</tr><tr><td>(0, 2)</td>
+<td>6</td>
+<td>$$(\frac{y - y_E}{h_E})^2$$</td>
+<td>$$(0, \frac{2(y - y_E)}{h_E^2})$$</td>
+</tr><tr><td>(3, 0)</td>
+<td>7</td>
+<td>$$(\frac{x - x_E}{h_E})^3$$</td>
+<td>$$(\frac{3(x - x_E)^2}{h_E^3}, 0)$$</td>
+</tr><tr><td>(2, 1)</td>
+<td>8</td>
+<td>$$\frac{(x - x_E)^2(y - y_E)}{h_E^3}$$</td>
+<td>$$(\frac{2(x - x_E)(y - y_E)}{h_E^3}, \frac{(x - x_E)^2}{h_E^3})$$</td>
+</tr><tr><td>(1, 2)</td>
+<td>9</td>
+<td>$$\frac{(x - x_E)(y - y_E)^2}{h_E^3}$$</td>
+<td>$$(\frac{(y - y_E)^2}{h_E^3}, \frac{2(x - x_E)(y - y_E)}{h_E^3})$$</td>
+</tr><tr><td>(0, 3)</td>
+<td>10</td>
+<td>$$(\frac{y - y_E}{h_E})^3$$</td>
+<td>$$(0, \frac{3(y - y_E)^2}{h_E^3})$$</td>
+</tr></tbody></table>
+
+<h3 id="62--k-1">6.2  k= 1</h3><p>$$
+\begin{equation}
+\begin{aligned}
+G = &amp;
+\begin{pmatrix}
+P<em>0 m_1 &amp; P_0m_2 &amp;  P_0 m</em>{3} \
+0 &amp; (\nabla m<em>2, \nabla m_2)</em>{0,E} &amp;  (\nabla m<em>2, \nabla m</em>{3})<em>{0,E}\
+0 &amp; (\nabla m</em>{3}, \nabla m<em>2)</em>{0,E} &amp;  (\nabla m<em>{3}, \nabla m</em>{3})<em>{0,E}
+\end{pmatrix}\
+= &amp; \begin{pmatrix}
+1 &amp; \sum</em>{i=1}^{N^V} \frac{x<em>i - x</em>{c,E}}{h<em>EN^V} &amp; \sum</em>{i=1}^{N^V} \frac{y<em>i - y</em>{c,E}}{h_EN^V}\
+0 &amp; 1 &amp; 0\
+0 &amp; 0 &amp; 1
+\end{pmatrix}\
+=&amp; \begin{pmatrix}
+1 &amp; 0 &amp; 0\
+0 &amp; 1 &amp; 0\
+0 &amp; 0 &amp; 1
+\end{pmatrix}
+\end{aligned}
+\end{equation}</p><p>$$</p><p>$$
+\begin{equation}
+\begin{aligned}
+B =&amp; 
+\begin{pmatrix}
+P<em>0\varphi_1 &amp; \cdots &amp; P_0\varphi</em>{N^{V}}\
+(\nabla m<em>2, \nabla\varphi_1)</em>{0, E} &amp; \cdots &amp; (\nabla m<em>2, \nabla\varphi</em>{N^{V}})<em>{0, E}\
+(\nabla m</em>{3}, \nabla\varphi<em>1)</em>{0, E} &amp; \cdots &amp; (\nabla m<em>{3}, \nabla\varphi</em>{N^{V}})<em>{0, E}\
+\end{pmatrix}\
+=&amp; \begin{pmatrix}
+P_0\varphi_1 &amp; \cdots &amp; P_0\varphi</em>{N^{V}}\
+-(\Delta m<em>2,\varphi_1)</em>{0, E} &amp; \cdots &amp; -(\Delta m<em>2,\varphi</em>{N^{V}})<em>{0, E}\
+-(\Delta m</em>{3}, \varphi<em>1)</em>{0, E} &amp; \cdots &amp; -(\Delta m<em>{3},\varphi</em>{N^{V}})<em>{0, E}\
+\end{pmatrix}\
+&amp; +\begin{pmatrix}
+0 &amp; \cdots &amp; 0\
+(\frac{ \partial m_2}{\partial n},\varphi_1)</em>{\partial E} &amp; \cdots &amp; (\frac{\partial m<em>2}{\partial n},\varphi</em>{N^{V}})<em>{\partial E}\
+(\frac{\partial m</em>{3}}{\partial n}, \varphi<em>1)</em>{\partial E} &amp; \cdots &amp; (\frac{\partial m<em>{3}}{\partial n}, \varphi</em>{N^{V}})<em>{\partial E}\
+\end{pmatrix}\
+=&amp;\begin{pmatrix}
+\frac{1}{N^V} &amp; \cdots &amp; \frac{1}{N^V}\
+(\frac{ \partial m_2}{\partial n},\varphi_1)</em>{\partial E} &amp; \cdots &amp; (\frac{\partial m<em>2}{\partial n},\varphi</em>{N^{V}})<em>{\partial E}\
+(\frac{\partial m</em>{3}}{\partial n}, \varphi<em>1)</em>{\partial E} &amp; \cdots &amp; (\frac{\partial m<em>{3}}{\partial n}, \varphi</em>{N^{V}})<em>{\partial E}\
+\end{pmatrix}\
+=&amp;\begin{pmatrix}
+\frac{1}{N^V} \cdots \frac{1}{N^V}\
+\frac{1}{h_E}\sum_e n_e(\int_e\varphi_1, \cdots, \int_e\varphi</em>{N^V<em>P})
+\end{pmatrix}\
+=&amp; \begin{pmatrix}
+\frac{1}{N^V} &amp; \cdots &amp; \frac{1}{N^V}\
+\frac{1}{h_E}\vec{d}_1 &amp; \cdots &amp; \frac{1}{h_E} \vec{d}</em>{N_E^V}\
+\end{pmatrix}\
+\end{aligned}
+\end{equation}</p><p>$$</p><p>&#x5176;&#x4E2D; $$\vec{d}<em>{i} = \frac{1}{2}W^T(X</em>{i+1} - X_{i-1})$$ .</p><p>$$
+\begin{equation}
+\begin{aligned}
+D = &amp;\begin{pmatrix}
+dof<em>1(m_1) &amp; dof_1(m_2) &amp;  dof_1(m</em>{3}) \
+dof<em>2(m_1) &amp; dof_2(m_2) &amp;  dof_2(m</em>{3}) \
+\vdots &amp; \vdots &amp; \vdots \
+dof<em>{N^{v}}(m_1) &amp; dof</em>{N^{v}}(m<em>2) &amp; dof</em>{N^{v}}(m<em>{3}) 
+\end{pmatrix}\
+=&amp; \begin{pmatrix}
+1 &amp; \frac{x_1 - x</em>{c,E}}{h<em>E} &amp;  \frac{y_1 - y</em>{c,E}}{h<em>E} \
+1 &amp; \frac{x_2 - x</em>{c,E}}{h<em>E} &amp;  \frac{y_2 - y</em>{c,E}}{h<em>E} \
+\vdots &amp; \vdots &amp; \vdots \
+1 &amp; \frac{x</em>{N^V} - x<em>{c,E}}{h_E} &amp; \frac{y</em>{N^V} - y_{c,E}}{h_E}
+\end{pmatrix}
+\end{aligned}
+\end{equation}</p><p>$$</p><p>$$
+\begin{equation}
+H = \begin{pmatrix}
+(m<em>1, m_1) &amp; (m_1, m_2) &amp;  (m_1, m</em>{3}) \
+(m<em>2, m_1) &amp; (m_2, m_2) &amp;  (m_2, m</em>{3}) \
+(m<em>{3}, m_1) &amp; (m</em>{3}, m<em>2) &amp; (m</em>{3}, m_{3}) 
+\end{pmatrix}
+\end{equation}</p><p>$$</p><p>$$
+\begin{equation}
+\begin{aligned}
+C =&amp; \begin{pmatrix}
+(m<em>1, \varphi_1) &amp; (m_1, \varphi_2) &amp; \cdots &amp; (m_1, \varphi</em>{N^{V}}) \
+(m<em>2, \varphi_1) &amp; (m_2, \varphi_2) &amp; \cdots &amp; (m_2, \varphi</em>{N^{V}})\
+(m<em>{3}, \varphi_1) &amp; (m</em>{3}, \varphi<em>2) &amp; \cdots &amp; (m</em>{3},\varphi_{N^{V}})
+\end{pmatrix}\
+=&amp; HG^{-1}B
+\end{aligned}
+\end{equation}</p><p>$$</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vim_way.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: vim_way">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"vem2d","level":"1.8","depth":1,"previous":{"title":"vim_way","level":"1.7","depth":1,"path":"vim_way.md","ref":"vim_way.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"vem2d.md","mtime":"2016-12-16T09:10:58.044Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-01-14T14:33:27.624Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
