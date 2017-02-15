@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/if2.dir/if2.cpp.o  -o if2  -L/usr/local/lib -rdynamic 

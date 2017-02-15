@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/zhongzhihs.dir/zhongzhihs.cpp.o  -o zhongzhihs  -L/usr/local/lib -rdynamic 

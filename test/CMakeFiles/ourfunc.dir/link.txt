@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/ourfunc.dir/ourfunc.cpp.o  -o ourfunc  -L/usr/local/lib -rdynamic 

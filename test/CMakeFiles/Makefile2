@@ -54,1620 +54,1488 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wlj/repository/wlj-study
+CMAKE_SOURCE_DIR = /home/wlj/repository/wlj-study/test
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/wlj/repository/wlj-study/test
 
 #=============================================================================
-# Directory level rules for directory include
-
-# Convenience name for "all" pass in the directory.
-include/all:
-
-.PHONY : include/all
-
-# Convenience name for "clean" pass in the directory.
-include/clean:
-
-.PHONY : include/clean
-
-# Convenience name for "preinstall" pass in the directory.
-include/preinstall:
-
-.PHONY : include/preinstall
-
-#=============================================================================
-# Directory level rules for directory src
-
-# Convenience name for "all" pass in the directory.
-src/all:
-
-.PHONY : src/all
-
-# Convenience name for "clean" pass in the directory.
-src/clean:
-
-.PHONY : src/clean
-
-# Convenience name for "preinstall" pass in the directory.
-src/preinstall:
-
-.PHONY : src/preinstall
-
-#=============================================================================
-# Directory level rules for directory test
-
-# Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/7.dir/all
-test/all: test/CMakeFiles/zhongzhihs.dir/all
-test/all: test/CMakeFiles/6.dir/all
-test/all: test/CMakeFiles/feibo.dir/all
-test/all: test/CMakeFiles/pingf3.dir/all
-test/all: test/CMakeFiles/7t.dir/all
-test/all: test/CMakeFiles/pingf2.dir/all
-test/all: test/CMakeFiles/pingf.dir/all
-test/all: test/CMakeFiles/jiecheng.dir/all
-test/all: test/CMakeFiles/5.dir/all
-test/all: test/CMakeFiles/3.dir/all
-test/all: test/CMakeFiles/daoshu.dir/all
-test/all: test/CMakeFiles/dis.dir/all
-test/all: test/CMakeFiles/pi1.dir/all
-test/all: test/CMakeFiles/trigon.dir/all
-test/all: test/CMakeFiles/gcd.dir/all
-test/all: test/CMakeFiles/CGAL_test.dir/all
-test/all: test/CMakeFiles/2.dir/all
-test/all: test/CMakeFiles/sqr.dir/all
-test/all: test/CMakeFiles/dowhile.dir/all
-test/all: test/CMakeFiles/fun.dir/all
-test/all: test/CMakeFiles/max.dir/all
-test/all: test/CMakeFiles/rank.dir/all
-test/all: test/CMakeFiles/sqr1.dir/all
-test/all: test/CMakeFiles/tixing.dir/all
-test/all: test/CMakeFiles/4.dir/all
-test/all: test/CMakeFiles/circle.dir/all
-test/all: test/CMakeFiles/side.dir/all
-test/all: test/CMakeFiles/if1.dir/all
-test/all: test/CMakeFiles/ourfunc.dir/all
-test/all: test/CMakeFiles/array1.dir/all
-test/all: test/CMakeFiles/xing.dir/all
-test/all: test/CMakeFiles/rank1.dir/all
-test/all: test/CMakeFiles/if2.dir/all
-test/all: test/CMakeFiles/factorial.dir/all
-test/all: test/CMakeFiles/asterist.dir/all
-test/all: test/CMakeFiles/sum.dir/all
-test/all: test/CMakeFiles/formore.dir/all
-test/all: test/CMakeFiles/sum1.dir/all
-test/all: test/CMakeFiles/arctan.dir/all
-
-.PHONY : test/all
-
-# Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/7.dir/clean
-test/clean: test/CMakeFiles/zhongzhihs.dir/clean
-test/clean: test/CMakeFiles/6.dir/clean
-test/clean: test/CMakeFiles/feibo.dir/clean
-test/clean: test/CMakeFiles/pingf3.dir/clean
-test/clean: test/CMakeFiles/7t.dir/clean
-test/clean: test/CMakeFiles/pingf2.dir/clean
-test/clean: test/CMakeFiles/pingf.dir/clean
-test/clean: test/CMakeFiles/jiecheng.dir/clean
-test/clean: test/CMakeFiles/5.dir/clean
-test/clean: test/CMakeFiles/3.dir/clean
-test/clean: test/CMakeFiles/daoshu.dir/clean
-test/clean: test/CMakeFiles/dis.dir/clean
-test/clean: test/CMakeFiles/pi1.dir/clean
-test/clean: test/CMakeFiles/trigon.dir/clean
-test/clean: test/CMakeFiles/gcd.dir/clean
-test/clean: test/CMakeFiles/CGAL_test.dir/clean
-test/clean: test/CMakeFiles/2.dir/clean
-test/clean: test/CMakeFiles/sqr.dir/clean
-test/clean: test/CMakeFiles/dowhile.dir/clean
-test/clean: test/CMakeFiles/fun.dir/clean
-test/clean: test/CMakeFiles/max.dir/clean
-test/clean: test/CMakeFiles/rank.dir/clean
-test/clean: test/CMakeFiles/sqr1.dir/clean
-test/clean: test/CMakeFiles/tixing.dir/clean
-test/clean: test/CMakeFiles/4.dir/clean
-test/clean: test/CMakeFiles/circle.dir/clean
-test/clean: test/CMakeFiles/side.dir/clean
-test/clean: test/CMakeFiles/if1.dir/clean
-test/clean: test/CMakeFiles/ourfunc.dir/clean
-test/clean: test/CMakeFiles/array1.dir/clean
-test/clean: test/CMakeFiles/xing.dir/clean
-test/clean: test/CMakeFiles/rank1.dir/clean
-test/clean: test/CMakeFiles/if2.dir/clean
-test/clean: test/CMakeFiles/factorial.dir/clean
-test/clean: test/CMakeFiles/asterist.dir/clean
-test/clean: test/CMakeFiles/sum.dir/clean
-test/clean: test/CMakeFiles/formore.dir/clean
-test/clean: test/CMakeFiles/sum1.dir/clean
-test/clean: test/CMakeFiles/arctan.dir/clean
-
-.PHONY : test/clean
-
-# Convenience name for "preinstall" pass in the directory.
-test/preinstall:
-
-.PHONY : test/preinstall
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/7.dir
+# Target rules for target CMakeFiles/7.dir
 
 # All Build rule for target.
-test/CMakeFiles/7.dir/all:
-	$(MAKE) -f test/CMakeFiles/7.dir/build.make test/CMakeFiles/7.dir/depend
-	$(MAKE) -f test/CMakeFiles/7.dir/build.make test/CMakeFiles/7.dir/build
+CMakeFiles/7.dir/all:
+	$(MAKE) -f CMakeFiles/7.dir/build.make CMakeFiles/7.dir/depend
+	$(MAKE) -f CMakeFiles/7.dir/build.make CMakeFiles/7.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=11,12 "Built target 7"
-.PHONY : test/CMakeFiles/7.dir/all
+.PHONY : CMakeFiles/7.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/7.dir/all
+all: CMakeFiles/7.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/7.dir/rule: cmake_check_build_system
+CMakeFiles/7.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/7.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/7.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/7.dir/rule
+.PHONY : CMakeFiles/7.dir/rule
 
 # Convenience name for target.
-7 : test/CMakeFiles/7.dir/rule
+7 : CMakeFiles/7.dir/rule
 
 .PHONY : 7
 
 # clean rule for target.
-test/CMakeFiles/7.dir/clean:
-	$(MAKE) -f test/CMakeFiles/7.dir/build.make test/CMakeFiles/7.dir/clean
-.PHONY : test/CMakeFiles/7.dir/clean
+CMakeFiles/7.dir/clean:
+	$(MAKE) -f CMakeFiles/7.dir/build.make CMakeFiles/7.dir/clean
+.PHONY : CMakeFiles/7.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/7.dir/clean
+clean: CMakeFiles/7.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/zhongzhihs.dir
+# Target rules for target CMakeFiles/zhongzhihs.dir
 
 # All Build rule for target.
-test/CMakeFiles/zhongzhihs.dir/all:
-	$(MAKE) -f test/CMakeFiles/zhongzhihs.dir/build.make test/CMakeFiles/zhongzhihs.dir/depend
-	$(MAKE) -f test/CMakeFiles/zhongzhihs.dir/build.make test/CMakeFiles/zhongzhihs.dir/build
+CMakeFiles/zhongzhihs.dir/all:
+	$(MAKE) -f CMakeFiles/zhongzhihs.dir/build.make CMakeFiles/zhongzhihs.dir/depend
+	$(MAKE) -f CMakeFiles/zhongzhihs.dir/build.make CMakeFiles/zhongzhihs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=79,80 "Built target zhongzhihs"
-.PHONY : test/CMakeFiles/zhongzhihs.dir/all
+.PHONY : CMakeFiles/zhongzhihs.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/zhongzhihs.dir/all
+all: CMakeFiles/zhongzhihs.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/zhongzhihs.dir/rule: cmake_check_build_system
+CMakeFiles/zhongzhihs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/zhongzhihs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/zhongzhihs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/zhongzhihs.dir/rule
+.PHONY : CMakeFiles/zhongzhihs.dir/rule
 
 # Convenience name for target.
-zhongzhihs: test/CMakeFiles/zhongzhihs.dir/rule
+zhongzhihs: CMakeFiles/zhongzhihs.dir/rule
 
 .PHONY : zhongzhihs
 
 # clean rule for target.
-test/CMakeFiles/zhongzhihs.dir/clean:
-	$(MAKE) -f test/CMakeFiles/zhongzhihs.dir/build.make test/CMakeFiles/zhongzhihs.dir/clean
-.PHONY : test/CMakeFiles/zhongzhihs.dir/clean
+CMakeFiles/zhongzhihs.dir/clean:
+	$(MAKE) -f CMakeFiles/zhongzhihs.dir/build.make CMakeFiles/zhongzhihs.dir/clean
+.PHONY : CMakeFiles/zhongzhihs.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/zhongzhihs.dir/clean
+clean: CMakeFiles/zhongzhihs.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/6.dir
+# Target rules for target CMakeFiles/6.dir
 
 # All Build rule for target.
-test/CMakeFiles/6.dir/all:
-	$(MAKE) -f test/CMakeFiles/6.dir/build.make test/CMakeFiles/6.dir/depend
-	$(MAKE) -f test/CMakeFiles/6.dir/build.make test/CMakeFiles/6.dir/build
+CMakeFiles/6.dir/all:
+	$(MAKE) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/depend
+	$(MAKE) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=9,10 "Built target 6"
-.PHONY : test/CMakeFiles/6.dir/all
+.PHONY : CMakeFiles/6.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/6.dir/all
+all: CMakeFiles/6.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/6.dir/rule: cmake_check_build_system
+CMakeFiles/6.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/6.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/6.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/6.dir/rule
+.PHONY : CMakeFiles/6.dir/rule
 
 # Convenience name for target.
-6 : test/CMakeFiles/6.dir/rule
+6 : CMakeFiles/6.dir/rule
 
 .PHONY : 6
 
 # clean rule for target.
-test/CMakeFiles/6.dir/clean:
-	$(MAKE) -f test/CMakeFiles/6.dir/build.make test/CMakeFiles/6.dir/clean
-.PHONY : test/CMakeFiles/6.dir/clean
+CMakeFiles/6.dir/clean:
+	$(MAKE) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/clean
+.PHONY : CMakeFiles/6.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/6.dir/clean
+clean: CMakeFiles/6.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/feibo.dir
+# Target rules for target CMakeFiles/feibo.dir
 
 # All Build rule for target.
-test/CMakeFiles/feibo.dir/all:
-	$(MAKE) -f test/CMakeFiles/feibo.dir/build.make test/CMakeFiles/feibo.dir/depend
-	$(MAKE) -f test/CMakeFiles/feibo.dir/build.make test/CMakeFiles/feibo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=33,34 "Built target feibo"
-.PHONY : test/CMakeFiles/feibo.dir/all
+CMakeFiles/feibo.dir/all:
+	$(MAKE) -f CMakeFiles/feibo.dir/build.make CMakeFiles/feibo.dir/depend
+	$(MAKE) -f CMakeFiles/feibo.dir/build.make CMakeFiles/feibo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=31,32 "Built target feibo"
+.PHONY : CMakeFiles/feibo.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/feibo.dir/all
+all: CMakeFiles/feibo.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/feibo.dir/rule: cmake_check_build_system
+CMakeFiles/feibo.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/feibo.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/feibo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/feibo.dir/rule
+.PHONY : CMakeFiles/feibo.dir/rule
 
 # Convenience name for target.
-feibo: test/CMakeFiles/feibo.dir/rule
+feibo: CMakeFiles/feibo.dir/rule
 
 .PHONY : feibo
 
 # clean rule for target.
-test/CMakeFiles/feibo.dir/clean:
-	$(MAKE) -f test/CMakeFiles/feibo.dir/build.make test/CMakeFiles/feibo.dir/clean
-.PHONY : test/CMakeFiles/feibo.dir/clean
+CMakeFiles/feibo.dir/clean:
+	$(MAKE) -f CMakeFiles/feibo.dir/build.make CMakeFiles/feibo.dir/clean
+.PHONY : CMakeFiles/feibo.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/feibo.dir/clean
+clean: CMakeFiles/feibo.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/pingf3.dir
+# Target rules for target CMakeFiles/pingf3.dir
 
 # All Build rule for target.
-test/CMakeFiles/pingf3.dir/all:
-	$(MAKE) -f test/CMakeFiles/pingf3.dir/build.make test/CMakeFiles/pingf3.dir/depend
-	$(MAKE) -f test/CMakeFiles/pingf3.dir/build.make test/CMakeFiles/pingf3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=57,58 "Built target pingf3"
-.PHONY : test/CMakeFiles/pingf3.dir/all
+CMakeFiles/pingf3.dir/all:
+	$(MAKE) -f CMakeFiles/pingf3.dir/build.make CMakeFiles/pingf3.dir/depend
+	$(MAKE) -f CMakeFiles/pingf3.dir/build.make CMakeFiles/pingf3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=55,56 "Built target pingf3"
+.PHONY : CMakeFiles/pingf3.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/pingf3.dir/all
+all: CMakeFiles/pingf3.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/pingf3.dir/rule: cmake_check_build_system
+CMakeFiles/pingf3.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/pingf3.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pingf3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/pingf3.dir/rule
+.PHONY : CMakeFiles/pingf3.dir/rule
 
 # Convenience name for target.
-pingf3: test/CMakeFiles/pingf3.dir/rule
+pingf3: CMakeFiles/pingf3.dir/rule
 
 .PHONY : pingf3
 
 # clean rule for target.
-test/CMakeFiles/pingf3.dir/clean:
-	$(MAKE) -f test/CMakeFiles/pingf3.dir/build.make test/CMakeFiles/pingf3.dir/clean
-.PHONY : test/CMakeFiles/pingf3.dir/clean
+CMakeFiles/pingf3.dir/clean:
+	$(MAKE) -f CMakeFiles/pingf3.dir/build.make CMakeFiles/pingf3.dir/clean
+.PHONY : CMakeFiles/pingf3.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/pingf3.dir/clean
+clean: CMakeFiles/pingf3.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/7t.dir
+# Target rules for target CMakeFiles/xianyuanfa.dir
 
 # All Build rule for target.
-test/CMakeFiles/7t.dir/all:
-	$(MAKE) -f test/CMakeFiles/7t.dir/build.make test/CMakeFiles/7t.dir/depend
-	$(MAKE) -f test/CMakeFiles/7t.dir/build.make test/CMakeFiles/7t.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=13,14 "Built target 7t"
-.PHONY : test/CMakeFiles/7t.dir/all
+CMakeFiles/xianyuanfa.dir/all:
+	$(MAKE) -f CMakeFiles/xianyuanfa.dir/build.make CMakeFiles/xianyuanfa.dir/depend
+	$(MAKE) -f CMakeFiles/xianyuanfa.dir/build.make CMakeFiles/xianyuanfa.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=75,76 "Built target xianyuanfa"
+.PHONY : CMakeFiles/xianyuanfa.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/7t.dir/all
+all: CMakeFiles/xianyuanfa.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/7t.dir/rule: cmake_check_build_system
+CMakeFiles/xianyuanfa.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/7t.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/xianyuanfa.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/7t.dir/rule
+.PHONY : CMakeFiles/xianyuanfa.dir/rule
 
 # Convenience name for target.
-7t: test/CMakeFiles/7t.dir/rule
+xianyuanfa: CMakeFiles/xianyuanfa.dir/rule
+
+.PHONY : xianyuanfa
+
+# clean rule for target.
+CMakeFiles/xianyuanfa.dir/clean:
+	$(MAKE) -f CMakeFiles/xianyuanfa.dir/build.make CMakeFiles/xianyuanfa.dir/clean
+.PHONY : CMakeFiles/xianyuanfa.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/xianyuanfa.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/7t.dir
+
+# All Build rule for target.
+CMakeFiles/7t.dir/all:
+	$(MAKE) -f CMakeFiles/7t.dir/build.make CMakeFiles/7t.dir/depend
+	$(MAKE) -f CMakeFiles/7t.dir/build.make CMakeFiles/7t.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=13,14 "Built target 7t"
+.PHONY : CMakeFiles/7t.dir/all
+
+# Include target in all.
+all: CMakeFiles/7t.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/7t.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/7t.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/7t.dir/rule
+
+# Convenience name for target.
+7t: CMakeFiles/7t.dir/rule
 
 .PHONY : 7t
 
 # clean rule for target.
-test/CMakeFiles/7t.dir/clean:
-	$(MAKE) -f test/CMakeFiles/7t.dir/build.make test/CMakeFiles/7t.dir/clean
-.PHONY : test/CMakeFiles/7t.dir/clean
+CMakeFiles/7t.dir/clean:
+	$(MAKE) -f CMakeFiles/7t.dir/build.make CMakeFiles/7t.dir/clean
+.PHONY : CMakeFiles/7t.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/7t.dir/clean
+clean: CMakeFiles/7t.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/pingf2.dir
+# Target rules for target CMakeFiles/pingf2.dir
 
 # All Build rule for target.
-test/CMakeFiles/pingf2.dir/all:
-	$(MAKE) -f test/CMakeFiles/pingf2.dir/build.make test/CMakeFiles/pingf2.dir/depend
-	$(MAKE) -f test/CMakeFiles/pingf2.dir/build.make test/CMakeFiles/pingf2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=55,56 "Built target pingf2"
-.PHONY : test/CMakeFiles/pingf2.dir/all
+CMakeFiles/pingf2.dir/all:
+	$(MAKE) -f CMakeFiles/pingf2.dir/build.make CMakeFiles/pingf2.dir/depend
+	$(MAKE) -f CMakeFiles/pingf2.dir/build.make CMakeFiles/pingf2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=53,54 "Built target pingf2"
+.PHONY : CMakeFiles/pingf2.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/pingf2.dir/all
+all: CMakeFiles/pingf2.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/pingf2.dir/rule: cmake_check_build_system
+CMakeFiles/pingf2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/pingf2.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pingf2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/pingf2.dir/rule
+.PHONY : CMakeFiles/pingf2.dir/rule
 
 # Convenience name for target.
-pingf2: test/CMakeFiles/pingf2.dir/rule
+pingf2: CMakeFiles/pingf2.dir/rule
 
 .PHONY : pingf2
 
 # clean rule for target.
-test/CMakeFiles/pingf2.dir/clean:
-	$(MAKE) -f test/CMakeFiles/pingf2.dir/build.make test/CMakeFiles/pingf2.dir/clean
-.PHONY : test/CMakeFiles/pingf2.dir/clean
+CMakeFiles/pingf2.dir/clean:
+	$(MAKE) -f CMakeFiles/pingf2.dir/build.make CMakeFiles/pingf2.dir/clean
+.PHONY : CMakeFiles/pingf2.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/pingf2.dir/clean
+clean: CMakeFiles/pingf2.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/pingf.dir
+# Target rules for target CMakeFiles/pingf.dir
 
 # All Build rule for target.
-test/CMakeFiles/pingf.dir/all:
-	$(MAKE) -f test/CMakeFiles/pingf.dir/build.make test/CMakeFiles/pingf.dir/depend
-	$(MAKE) -f test/CMakeFiles/pingf.dir/build.make test/CMakeFiles/pingf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=53,54 "Built target pingf"
-.PHONY : test/CMakeFiles/pingf.dir/all
+CMakeFiles/pingf.dir/all:
+	$(MAKE) -f CMakeFiles/pingf.dir/build.make CMakeFiles/pingf.dir/depend
+	$(MAKE) -f CMakeFiles/pingf.dir/build.make CMakeFiles/pingf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=51,52 "Built target pingf"
+.PHONY : CMakeFiles/pingf.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/pingf.dir/all
+all: CMakeFiles/pingf.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/pingf.dir/rule: cmake_check_build_system
+CMakeFiles/pingf.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/pingf.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pingf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/pingf.dir/rule
+.PHONY : CMakeFiles/pingf.dir/rule
 
 # Convenience name for target.
-pingf: test/CMakeFiles/pingf.dir/rule
+pingf: CMakeFiles/pingf.dir/rule
 
 .PHONY : pingf
 
 # clean rule for target.
-test/CMakeFiles/pingf.dir/clean:
-	$(MAKE) -f test/CMakeFiles/pingf.dir/build.make test/CMakeFiles/pingf.dir/clean
-.PHONY : test/CMakeFiles/pingf.dir/clean
+CMakeFiles/pingf.dir/clean:
+	$(MAKE) -f CMakeFiles/pingf.dir/build.make CMakeFiles/pingf.dir/clean
+.PHONY : CMakeFiles/pingf.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/pingf.dir/clean
+clean: CMakeFiles/pingf.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/jiecheng.dir
+# Target rules for target CMakeFiles/jiecheng.dir
 
 # All Build rule for target.
-test/CMakeFiles/jiecheng.dir/all:
-	$(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/depend
-	$(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=45,46 "Built target jiecheng"
-.PHONY : test/CMakeFiles/jiecheng.dir/all
+CMakeFiles/jiecheng.dir/all:
+	$(MAKE) -f CMakeFiles/jiecheng.dir/build.make CMakeFiles/jiecheng.dir/depend
+	$(MAKE) -f CMakeFiles/jiecheng.dir/build.make CMakeFiles/jiecheng.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=43,44 "Built target jiecheng"
+.PHONY : CMakeFiles/jiecheng.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/jiecheng.dir/all
+all: CMakeFiles/jiecheng.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/jiecheng.dir/rule: cmake_check_build_system
+CMakeFiles/jiecheng.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/jiecheng.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/jiecheng.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/jiecheng.dir/rule
+.PHONY : CMakeFiles/jiecheng.dir/rule
 
 # Convenience name for target.
-jiecheng: test/CMakeFiles/jiecheng.dir/rule
+jiecheng: CMakeFiles/jiecheng.dir/rule
 
 .PHONY : jiecheng
 
 # clean rule for target.
-test/CMakeFiles/jiecheng.dir/clean:
-	$(MAKE) -f test/CMakeFiles/jiecheng.dir/build.make test/CMakeFiles/jiecheng.dir/clean
-.PHONY : test/CMakeFiles/jiecheng.dir/clean
+CMakeFiles/jiecheng.dir/clean:
+	$(MAKE) -f CMakeFiles/jiecheng.dir/build.make CMakeFiles/jiecheng.dir/clean
+.PHONY : CMakeFiles/jiecheng.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/jiecheng.dir/clean
+clean: CMakeFiles/jiecheng.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/5.dir
+# Target rules for target CMakeFiles/5.dir
 
 # All Build rule for target.
-test/CMakeFiles/5.dir/all:
-	$(MAKE) -f test/CMakeFiles/5.dir/build.make test/CMakeFiles/5.dir/depend
-	$(MAKE) -f test/CMakeFiles/5.dir/build.make test/CMakeFiles/5.dir/build
+CMakeFiles/5.dir/all:
+	$(MAKE) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/depend
+	$(MAKE) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=7,8 "Built target 5"
-.PHONY : test/CMakeFiles/5.dir/all
+.PHONY : CMakeFiles/5.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/5.dir/all
+all: CMakeFiles/5.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/5.dir/rule: cmake_check_build_system
+CMakeFiles/5.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/5.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/5.dir/rule
+.PHONY : CMakeFiles/5.dir/rule
 
 # Convenience name for target.
-5 : test/CMakeFiles/5.dir/rule
+5 : CMakeFiles/5.dir/rule
 
 .PHONY : 5
 
 # clean rule for target.
-test/CMakeFiles/5.dir/clean:
-	$(MAKE) -f test/CMakeFiles/5.dir/build.make test/CMakeFiles/5.dir/clean
-.PHONY : test/CMakeFiles/5.dir/clean
+CMakeFiles/5.dir/clean:
+	$(MAKE) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/clean
+.PHONY : CMakeFiles/5.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/5.dir/clean
+clean: CMakeFiles/5.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/3.dir
+# Target rules for target CMakeFiles/3.dir
 
 # All Build rule for target.
-test/CMakeFiles/3.dir/all:
-	$(MAKE) -f test/CMakeFiles/3.dir/build.make test/CMakeFiles/3.dir/depend
-	$(MAKE) -f test/CMakeFiles/3.dir/build.make test/CMakeFiles/3.dir/build
+CMakeFiles/3.dir/all:
+	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/depend
+	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=3,4 "Built target 3"
-.PHONY : test/CMakeFiles/3.dir/all
+.PHONY : CMakeFiles/3.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/3.dir/all
+all: CMakeFiles/3.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/3.dir/rule: cmake_check_build_system
+CMakeFiles/3.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/3.dir/rule
+.PHONY : CMakeFiles/3.dir/rule
 
 # Convenience name for target.
-3 : test/CMakeFiles/3.dir/rule
+3 : CMakeFiles/3.dir/rule
 
 .PHONY : 3
 
 # clean rule for target.
-test/CMakeFiles/3.dir/clean:
-	$(MAKE) -f test/CMakeFiles/3.dir/build.make test/CMakeFiles/3.dir/clean
-.PHONY : test/CMakeFiles/3.dir/clean
+CMakeFiles/3.dir/clean:
+	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/clean
+.PHONY : CMakeFiles/3.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/3.dir/clean
+clean: CMakeFiles/3.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/daoshu.dir
+# Target rules for target CMakeFiles/daoshu.dir
 
 # All Build rule for target.
-test/CMakeFiles/daoshu.dir/all:
-	$(MAKE) -f test/CMakeFiles/daoshu.dir/build.make test/CMakeFiles/daoshu.dir/depend
-	$(MAKE) -f test/CMakeFiles/daoshu.dir/build.make test/CMakeFiles/daoshu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=25,26 "Built target daoshu"
-.PHONY : test/CMakeFiles/daoshu.dir/all
+CMakeFiles/daoshu.dir/all:
+	$(MAKE) -f CMakeFiles/daoshu.dir/build.make CMakeFiles/daoshu.dir/depend
+	$(MAKE) -f CMakeFiles/daoshu.dir/build.make CMakeFiles/daoshu.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=23,24 "Built target daoshu"
+.PHONY : CMakeFiles/daoshu.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/daoshu.dir/all
+all: CMakeFiles/daoshu.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/daoshu.dir/rule: cmake_check_build_system
+CMakeFiles/daoshu.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/daoshu.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/daoshu.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/daoshu.dir/rule
+.PHONY : CMakeFiles/daoshu.dir/rule
 
 # Convenience name for target.
-daoshu: test/CMakeFiles/daoshu.dir/rule
+daoshu: CMakeFiles/daoshu.dir/rule
 
 .PHONY : daoshu
 
 # clean rule for target.
-test/CMakeFiles/daoshu.dir/clean:
-	$(MAKE) -f test/CMakeFiles/daoshu.dir/build.make test/CMakeFiles/daoshu.dir/clean
-.PHONY : test/CMakeFiles/daoshu.dir/clean
+CMakeFiles/daoshu.dir/clean:
+	$(MAKE) -f CMakeFiles/daoshu.dir/build.make CMakeFiles/daoshu.dir/clean
+.PHONY : CMakeFiles/daoshu.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/daoshu.dir/clean
+clean: CMakeFiles/daoshu.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/dis.dir
+# Target rules for target CMakeFiles/dis.dir
 
 # All Build rule for target.
-test/CMakeFiles/dis.dir/all:
-	$(MAKE) -f test/CMakeFiles/dis.dir/build.make test/CMakeFiles/dis.dir/depend
-	$(MAKE) -f test/CMakeFiles/dis.dir/build.make test/CMakeFiles/dis.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=27,28 "Built target dis"
-.PHONY : test/CMakeFiles/dis.dir/all
+CMakeFiles/dis.dir/all:
+	$(MAKE) -f CMakeFiles/dis.dir/build.make CMakeFiles/dis.dir/depend
+	$(MAKE) -f CMakeFiles/dis.dir/build.make CMakeFiles/dis.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=25,26 "Built target dis"
+.PHONY : CMakeFiles/dis.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/dis.dir/all
+all: CMakeFiles/dis.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/dis.dir/rule: cmake_check_build_system
+CMakeFiles/dis.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/dis.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dis.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/dis.dir/rule
+.PHONY : CMakeFiles/dis.dir/rule
 
 # Convenience name for target.
-dis: test/CMakeFiles/dis.dir/rule
+dis: CMakeFiles/dis.dir/rule
 
 .PHONY : dis
 
 # clean rule for target.
-test/CMakeFiles/dis.dir/clean:
-	$(MAKE) -f test/CMakeFiles/dis.dir/build.make test/CMakeFiles/dis.dir/clean
-.PHONY : test/CMakeFiles/dis.dir/clean
+CMakeFiles/dis.dir/clean:
+	$(MAKE) -f CMakeFiles/dis.dir/build.make CMakeFiles/dis.dir/clean
+.PHONY : CMakeFiles/dis.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/dis.dir/clean
+clean: CMakeFiles/dis.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/pi1.dir
+# Target rules for target CMakeFiles/4.dir
 
 # All Build rule for target.
-test/CMakeFiles/pi1.dir/all:
-	$(MAKE) -f test/CMakeFiles/pi1.dir/build.make test/CMakeFiles/pi1.dir/depend
-	$(MAKE) -f test/CMakeFiles/pi1.dir/build.make test/CMakeFiles/pi1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=51,52 "Built target pi1"
-.PHONY : test/CMakeFiles/pi1.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/pi1.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/pi1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/pi1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/pi1.dir/rule
-
-# Convenience name for target.
-pi1: test/CMakeFiles/pi1.dir/rule
-
-.PHONY : pi1
-
-# clean rule for target.
-test/CMakeFiles/pi1.dir/clean:
-	$(MAKE) -f test/CMakeFiles/pi1.dir/build.make test/CMakeFiles/pi1.dir/clean
-.PHONY : test/CMakeFiles/pi1.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/pi1.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/trigon.dir
-
-# All Build rule for target.
-test/CMakeFiles/trigon.dir/all:
-	$(MAKE) -f test/CMakeFiles/trigon.dir/build.make test/CMakeFiles/trigon.dir/depend
-	$(MAKE) -f test/CMakeFiles/trigon.dir/build.make test/CMakeFiles/trigon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=75,76 "Built target trigon"
-.PHONY : test/CMakeFiles/trigon.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/trigon.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/trigon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/trigon.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/trigon.dir/rule
-
-# Convenience name for target.
-trigon: test/CMakeFiles/trigon.dir/rule
-
-.PHONY : trigon
-
-# clean rule for target.
-test/CMakeFiles/trigon.dir/clean:
-	$(MAKE) -f test/CMakeFiles/trigon.dir/build.make test/CMakeFiles/trigon.dir/clean
-.PHONY : test/CMakeFiles/trigon.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/trigon.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/gcd.dir
-
-# All Build rule for target.
-test/CMakeFiles/gcd.dir/all:
-	$(MAKE) -f test/CMakeFiles/gcd.dir/build.make test/CMakeFiles/gcd.dir/depend
-	$(MAKE) -f test/CMakeFiles/gcd.dir/build.make test/CMakeFiles/gcd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=39,40 "Built target gcd"
-.PHONY : test/CMakeFiles/gcd.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/gcd.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/gcd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/gcd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/gcd.dir/rule
-
-# Convenience name for target.
-gcd: test/CMakeFiles/gcd.dir/rule
-
-.PHONY : gcd
-
-# clean rule for target.
-test/CMakeFiles/gcd.dir/clean:
-	$(MAKE) -f test/CMakeFiles/gcd.dir/build.make test/CMakeFiles/gcd.dir/clean
-.PHONY : test/CMakeFiles/gcd.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/gcd.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/CGAL_test.dir
-
-# All Build rule for target.
-test/CMakeFiles/CGAL_test.dir/all:
-	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/depend
-	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=15,16 "Built target CGAL_test"
-.PHONY : test/CMakeFiles/CGAL_test.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/CGAL_test.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/CGAL_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/CGAL_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/CGAL_test.dir/rule
-
-# Convenience name for target.
-CGAL_test: test/CMakeFiles/CGAL_test.dir/rule
-
-.PHONY : CGAL_test
-
-# clean rule for target.
-test/CMakeFiles/CGAL_test.dir/clean:
-	$(MAKE) -f test/CMakeFiles/CGAL_test.dir/build.make test/CMakeFiles/CGAL_test.dir/clean
-.PHONY : test/CMakeFiles/CGAL_test.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/CGAL_test.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/2.dir
-
-# All Build rule for target.
-test/CMakeFiles/2.dir/all:
-	$(MAKE) -f test/CMakeFiles/2.dir/build.make test/CMakeFiles/2.dir/depend
-	$(MAKE) -f test/CMakeFiles/2.dir/build.make test/CMakeFiles/2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=1,2 "Built target 2"
-.PHONY : test/CMakeFiles/2.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/2.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/2.dir/rule
-
-# Convenience name for target.
-2 : test/CMakeFiles/2.dir/rule
-
-.PHONY : 2
-
-# clean rule for target.
-test/CMakeFiles/2.dir/clean:
-	$(MAKE) -f test/CMakeFiles/2.dir/build.make test/CMakeFiles/2.dir/clean
-.PHONY : test/CMakeFiles/2.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/2.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/sqr.dir
-
-# All Build rule for target.
-test/CMakeFiles/sqr.dir/all:
-	$(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/depend
-	$(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=65,66 "Built target sqr"
-.PHONY : test/CMakeFiles/sqr.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/sqr.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/sqr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sqr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/sqr.dir/rule
-
-# Convenience name for target.
-sqr: test/CMakeFiles/sqr.dir/rule
-
-.PHONY : sqr
-
-# clean rule for target.
-test/CMakeFiles/sqr.dir/clean:
-	$(MAKE) -f test/CMakeFiles/sqr.dir/build.make test/CMakeFiles/sqr.dir/clean
-.PHONY : test/CMakeFiles/sqr.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/sqr.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/dowhile.dir
-
-# All Build rule for target.
-test/CMakeFiles/dowhile.dir/all:
-	$(MAKE) -f test/CMakeFiles/dowhile.dir/build.make test/CMakeFiles/dowhile.dir/depend
-	$(MAKE) -f test/CMakeFiles/dowhile.dir/build.make test/CMakeFiles/dowhile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=29,30 "Built target dowhile"
-.PHONY : test/CMakeFiles/dowhile.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/dowhile.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/dowhile.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/dowhile.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/dowhile.dir/rule
-
-# Convenience name for target.
-dowhile: test/CMakeFiles/dowhile.dir/rule
-
-.PHONY : dowhile
-
-# clean rule for target.
-test/CMakeFiles/dowhile.dir/clean:
-	$(MAKE) -f test/CMakeFiles/dowhile.dir/build.make test/CMakeFiles/dowhile.dir/clean
-.PHONY : test/CMakeFiles/dowhile.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/dowhile.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/fun.dir
-
-# All Build rule for target.
-test/CMakeFiles/fun.dir/all:
-	$(MAKE) -f test/CMakeFiles/fun.dir/build.make test/CMakeFiles/fun.dir/depend
-	$(MAKE) -f test/CMakeFiles/fun.dir/build.make test/CMakeFiles/fun.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=37,38 "Built target fun"
-.PHONY : test/CMakeFiles/fun.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/fun.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/fun.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/fun.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/fun.dir/rule
-
-# Convenience name for target.
-fun: test/CMakeFiles/fun.dir/rule
-
-.PHONY : fun
-
-# clean rule for target.
-test/CMakeFiles/fun.dir/clean:
-	$(MAKE) -f test/CMakeFiles/fun.dir/build.make test/CMakeFiles/fun.dir/clean
-.PHONY : test/CMakeFiles/fun.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/fun.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/max.dir
-
-# All Build rule for target.
-test/CMakeFiles/max.dir/all:
-	$(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/depend
-	$(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=47,48 "Built target max"
-.PHONY : test/CMakeFiles/max.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/max.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/max.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/max.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/max.dir/rule
-
-# Convenience name for target.
-max: test/CMakeFiles/max.dir/rule
-
-.PHONY : max
-
-# clean rule for target.
-test/CMakeFiles/max.dir/clean:
-	$(MAKE) -f test/CMakeFiles/max.dir/build.make test/CMakeFiles/max.dir/clean
-.PHONY : test/CMakeFiles/max.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/max.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/rank.dir
-
-# All Build rule for target.
-test/CMakeFiles/rank.dir/all:
-	$(MAKE) -f test/CMakeFiles/rank.dir/build.make test/CMakeFiles/rank.dir/depend
-	$(MAKE) -f test/CMakeFiles/rank.dir/build.make test/CMakeFiles/rank.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=59,60 "Built target rank"
-.PHONY : test/CMakeFiles/rank.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/rank.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/rank.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/rank.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/rank.dir/rule
-
-# Convenience name for target.
-rank: test/CMakeFiles/rank.dir/rule
-
-.PHONY : rank
-
-# clean rule for target.
-test/CMakeFiles/rank.dir/clean:
-	$(MAKE) -f test/CMakeFiles/rank.dir/build.make test/CMakeFiles/rank.dir/clean
-.PHONY : test/CMakeFiles/rank.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/rank.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/sqr1.dir
-
-# All Build rule for target.
-test/CMakeFiles/sqr1.dir/all:
-	$(MAKE) -f test/CMakeFiles/sqr1.dir/build.make test/CMakeFiles/sqr1.dir/depend
-	$(MAKE) -f test/CMakeFiles/sqr1.dir/build.make test/CMakeFiles/sqr1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=67,68 "Built target sqr1"
-.PHONY : test/CMakeFiles/sqr1.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/sqr1.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/sqr1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sqr1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/sqr1.dir/rule
-
-# Convenience name for target.
-sqr1: test/CMakeFiles/sqr1.dir/rule
-
-.PHONY : sqr1
-
-# clean rule for target.
-test/CMakeFiles/sqr1.dir/clean:
-	$(MAKE) -f test/CMakeFiles/sqr1.dir/build.make test/CMakeFiles/sqr1.dir/clean
-.PHONY : test/CMakeFiles/sqr1.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/sqr1.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/tixing.dir
-
-# All Build rule for target.
-test/CMakeFiles/tixing.dir/all:
-	$(MAKE) -f test/CMakeFiles/tixing.dir/build.make test/CMakeFiles/tixing.dir/depend
-	$(MAKE) -f test/CMakeFiles/tixing.dir/build.make test/CMakeFiles/tixing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=73,74 "Built target tixing"
-.PHONY : test/CMakeFiles/tixing.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/tixing.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/tixing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tixing.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/tixing.dir/rule
-
-# Convenience name for target.
-tixing: test/CMakeFiles/tixing.dir/rule
-
-.PHONY : tixing
-
-# clean rule for target.
-test/CMakeFiles/tixing.dir/clean:
-	$(MAKE) -f test/CMakeFiles/tixing.dir/build.make test/CMakeFiles/tixing.dir/clean
-.PHONY : test/CMakeFiles/tixing.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/tixing.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/4.dir
-
-# All Build rule for target.
-test/CMakeFiles/4.dir/all:
-	$(MAKE) -f test/CMakeFiles/4.dir/build.make test/CMakeFiles/4.dir/depend
-	$(MAKE) -f test/CMakeFiles/4.dir/build.make test/CMakeFiles/4.dir/build
+CMakeFiles/4.dir/all:
+	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/depend
+	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=5,6 "Built target 4"
-.PHONY : test/CMakeFiles/4.dir/all
+.PHONY : CMakeFiles/4.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/4.dir/all
+all: CMakeFiles/4.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/4.dir/rule: cmake_check_build_system
+CMakeFiles/4.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/4.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/4.dir/rule
+.PHONY : CMakeFiles/4.dir/rule
 
 # Convenience name for target.
-4 : test/CMakeFiles/4.dir/rule
+4 : CMakeFiles/4.dir/rule
 
 .PHONY : 4
 
 # clean rule for target.
-test/CMakeFiles/4.dir/clean:
-	$(MAKE) -f test/CMakeFiles/4.dir/build.make test/CMakeFiles/4.dir/clean
-.PHONY : test/CMakeFiles/4.dir/clean
+CMakeFiles/4.dir/clean:
+	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/clean
+.PHONY : CMakeFiles/4.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/4.dir/clean
+clean: CMakeFiles/4.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/circle.dir
+# Target rules for target CMakeFiles/circle.dir
 
 # All Build rule for target.
-test/CMakeFiles/circle.dir/all:
-	$(MAKE) -f test/CMakeFiles/circle.dir/build.make test/CMakeFiles/circle.dir/depend
-	$(MAKE) -f test/CMakeFiles/circle.dir/build.make test/CMakeFiles/circle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=23,24 "Built target circle"
-.PHONY : test/CMakeFiles/circle.dir/all
+CMakeFiles/circle.dir/all:
+	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/depend
+	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=21,22 "Built target circle"
+.PHONY : CMakeFiles/circle.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/circle.dir/all
+all: CMakeFiles/circle.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/circle.dir/rule: cmake_check_build_system
+CMakeFiles/circle.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/circle.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/circle.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/circle.dir/rule
+.PHONY : CMakeFiles/circle.dir/rule
 
 # Convenience name for target.
-circle: test/CMakeFiles/circle.dir/rule
+circle: CMakeFiles/circle.dir/rule
 
 .PHONY : circle
 
 # clean rule for target.
-test/CMakeFiles/circle.dir/clean:
-	$(MAKE) -f test/CMakeFiles/circle.dir/build.make test/CMakeFiles/circle.dir/clean
-.PHONY : test/CMakeFiles/circle.dir/clean
+CMakeFiles/circle.dir/clean:
+	$(MAKE) -f CMakeFiles/circle.dir/build.make CMakeFiles/circle.dir/clean
+.PHONY : CMakeFiles/circle.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/circle.dir/clean
+clean: CMakeFiles/circle.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/side.dir
+# Target rules for target CMakeFiles/side.dir
 
 # All Build rule for target.
-test/CMakeFiles/side.dir/all:
-	$(MAKE) -f test/CMakeFiles/side.dir/build.make test/CMakeFiles/side.dir/depend
-	$(MAKE) -f test/CMakeFiles/side.dir/build.make test/CMakeFiles/side.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=63,64 "Built target side"
-.PHONY : test/CMakeFiles/side.dir/all
+CMakeFiles/side.dir/all:
+	$(MAKE) -f CMakeFiles/side.dir/build.make CMakeFiles/side.dir/depend
+	$(MAKE) -f CMakeFiles/side.dir/build.make CMakeFiles/side.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=61,62 "Built target side"
+.PHONY : CMakeFiles/side.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/side.dir/all
+all: CMakeFiles/side.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/side.dir/rule: cmake_check_build_system
+CMakeFiles/side.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/side.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/side.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/side.dir/rule
+.PHONY : CMakeFiles/side.dir/rule
 
 # Convenience name for target.
-side: test/CMakeFiles/side.dir/rule
+side: CMakeFiles/side.dir/rule
 
 .PHONY : side
 
 # clean rule for target.
-test/CMakeFiles/side.dir/clean:
-	$(MAKE) -f test/CMakeFiles/side.dir/build.make test/CMakeFiles/side.dir/clean
-.PHONY : test/CMakeFiles/side.dir/clean
+CMakeFiles/side.dir/clean:
+	$(MAKE) -f CMakeFiles/side.dir/build.make CMakeFiles/side.dir/clean
+.PHONY : CMakeFiles/side.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/side.dir/clean
+clean: CMakeFiles/side.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/if1.dir
+# Target rules for target CMakeFiles/if1.dir
 
 # All Build rule for target.
-test/CMakeFiles/if1.dir/all:
-	$(MAKE) -f test/CMakeFiles/if1.dir/build.make test/CMakeFiles/if1.dir/depend
-	$(MAKE) -f test/CMakeFiles/if1.dir/build.make test/CMakeFiles/if1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=41,42 "Built target if1"
-.PHONY : test/CMakeFiles/if1.dir/all
+CMakeFiles/if1.dir/all:
+	$(MAKE) -f CMakeFiles/if1.dir/build.make CMakeFiles/if1.dir/depend
+	$(MAKE) -f CMakeFiles/if1.dir/build.make CMakeFiles/if1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=39,40 "Built target if1"
+.PHONY : CMakeFiles/if1.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/if1.dir/all
+all: CMakeFiles/if1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/if1.dir/rule: cmake_check_build_system
+CMakeFiles/if1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/if1.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/if1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/if1.dir/rule
+.PHONY : CMakeFiles/if1.dir/rule
 
 # Convenience name for target.
-if1: test/CMakeFiles/if1.dir/rule
+if1: CMakeFiles/if1.dir/rule
 
 .PHONY : if1
 
 # clean rule for target.
-test/CMakeFiles/if1.dir/clean:
-	$(MAKE) -f test/CMakeFiles/if1.dir/build.make test/CMakeFiles/if1.dir/clean
-.PHONY : test/CMakeFiles/if1.dir/clean
+CMakeFiles/if1.dir/clean:
+	$(MAKE) -f CMakeFiles/if1.dir/build.make CMakeFiles/if1.dir/clean
+.PHONY : CMakeFiles/if1.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/if1.dir/clean
+clean: CMakeFiles/if1.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/ourfunc.dir
+# Target rules for target CMakeFiles/array1.dir
 
 # All Build rule for target.
-test/CMakeFiles/ourfunc.dir/all:
-	$(MAKE) -f test/CMakeFiles/ourfunc.dir/build.make test/CMakeFiles/ourfunc.dir/depend
-	$(MAKE) -f test/CMakeFiles/ourfunc.dir/build.make test/CMakeFiles/ourfunc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=49,50 "Built target ourfunc"
-.PHONY : test/CMakeFiles/ourfunc.dir/all
+CMakeFiles/array1.dir/all:
+	$(MAKE) -f CMakeFiles/array1.dir/build.make CMakeFiles/array1.dir/depend
+	$(MAKE) -f CMakeFiles/array1.dir/build.make CMakeFiles/array1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=17,18 "Built target array1"
+.PHONY : CMakeFiles/array1.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/ourfunc.dir/all
+all: CMakeFiles/array1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/ourfunc.dir/rule: cmake_check_build_system
+CMakeFiles/array1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/ourfunc.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/array1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/ourfunc.dir/rule
+.PHONY : CMakeFiles/array1.dir/rule
 
 # Convenience name for target.
-ourfunc: test/CMakeFiles/ourfunc.dir/rule
-
-.PHONY : ourfunc
-
-# clean rule for target.
-test/CMakeFiles/ourfunc.dir/clean:
-	$(MAKE) -f test/CMakeFiles/ourfunc.dir/build.make test/CMakeFiles/ourfunc.dir/clean
-.PHONY : test/CMakeFiles/ourfunc.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/ourfunc.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/array1.dir
-
-# All Build rule for target.
-test/CMakeFiles/array1.dir/all:
-	$(MAKE) -f test/CMakeFiles/array1.dir/build.make test/CMakeFiles/array1.dir/depend
-	$(MAKE) -f test/CMakeFiles/array1.dir/build.make test/CMakeFiles/array1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=19,20 "Built target array1"
-.PHONY : test/CMakeFiles/array1.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/array1.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/array1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/array1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/array1.dir/rule
-
-# Convenience name for target.
-array1: test/CMakeFiles/array1.dir/rule
+array1: CMakeFiles/array1.dir/rule
 
 .PHONY : array1
 
 # clean rule for target.
-test/CMakeFiles/array1.dir/clean:
-	$(MAKE) -f test/CMakeFiles/array1.dir/build.make test/CMakeFiles/array1.dir/clean
-.PHONY : test/CMakeFiles/array1.dir/clean
+CMakeFiles/array1.dir/clean:
+	$(MAKE) -f CMakeFiles/array1.dir/build.make CMakeFiles/array1.dir/clean
+.PHONY : CMakeFiles/array1.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/array1.dir/clean
+clean: CMakeFiles/array1.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/xing.dir
+# Target rules for target CMakeFiles/ourfunc.dir
 
 # All Build rule for target.
-test/CMakeFiles/xing.dir/all:
-	$(MAKE) -f test/CMakeFiles/xing.dir/build.make test/CMakeFiles/xing.dir/depend
-	$(MAKE) -f test/CMakeFiles/xing.dir/build.make test/CMakeFiles/xing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=77,78 "Built target xing"
-.PHONY : test/CMakeFiles/xing.dir/all
+CMakeFiles/ourfunc.dir/all:
+	$(MAKE) -f CMakeFiles/ourfunc.dir/build.make CMakeFiles/ourfunc.dir/depend
+	$(MAKE) -f CMakeFiles/ourfunc.dir/build.make CMakeFiles/ourfunc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=47,48 "Built target ourfunc"
+.PHONY : CMakeFiles/ourfunc.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/xing.dir/all
+all: CMakeFiles/ourfunc.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/xing.dir/rule: cmake_check_build_system
+CMakeFiles/ourfunc.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/xing.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ourfunc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/xing.dir/rule
+.PHONY : CMakeFiles/ourfunc.dir/rule
 
 # Convenience name for target.
-xing: test/CMakeFiles/xing.dir/rule
+ourfunc: CMakeFiles/ourfunc.dir/rule
+
+.PHONY : ourfunc
+
+# clean rule for target.
+CMakeFiles/ourfunc.dir/clean:
+	$(MAKE) -f CMakeFiles/ourfunc.dir/build.make CMakeFiles/ourfunc.dir/clean
+.PHONY : CMakeFiles/ourfunc.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ourfunc.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/max.dir
+
+# All Build rule for target.
+CMakeFiles/max.dir/all:
+	$(MAKE) -f CMakeFiles/max.dir/build.make CMakeFiles/max.dir/depend
+	$(MAKE) -f CMakeFiles/max.dir/build.make CMakeFiles/max.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=45,46 "Built target max"
+.PHONY : CMakeFiles/max.dir/all
+
+# Include target in all.
+all: CMakeFiles/max.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/max.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/max.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/max.dir/rule
+
+# Convenience name for target.
+max: CMakeFiles/max.dir/rule
+
+.PHONY : max
+
+# clean rule for target.
+CMakeFiles/max.dir/clean:
+	$(MAKE) -f CMakeFiles/max.dir/build.make CMakeFiles/max.dir/clean
+.PHONY : CMakeFiles/max.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/max.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/2.dir
+
+# All Build rule for target.
+CMakeFiles/2.dir/all:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/depend
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=1,2 "Built target 2"
+.PHONY : CMakeFiles/2.dir/all
+
+# Include target in all.
+all: CMakeFiles/2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/2.dir/rule
+
+# Convenience name for target.
+2 : CMakeFiles/2.dir/rule
+
+.PHONY : 2
+
+# clean rule for target.
+CMakeFiles/2.dir/clean:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/clean
+.PHONY : CMakeFiles/2.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sqr.dir
+
+# All Build rule for target.
+CMakeFiles/sqr.dir/all:
+	$(MAKE) -f CMakeFiles/sqr.dir/build.make CMakeFiles/sqr.dir/depend
+	$(MAKE) -f CMakeFiles/sqr.dir/build.make CMakeFiles/sqr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=63,64 "Built target sqr"
+.PHONY : CMakeFiles/sqr.dir/all
+
+# Include target in all.
+all: CMakeFiles/sqr.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sqr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sqr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/sqr.dir/rule
+
+# Convenience name for target.
+sqr: CMakeFiles/sqr.dir/rule
+
+.PHONY : sqr
+
+# clean rule for target.
+CMakeFiles/sqr.dir/clean:
+	$(MAKE) -f CMakeFiles/sqr.dir/build.make CMakeFiles/sqr.dir/clean
+.PHONY : CMakeFiles/sqr.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/sqr.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/dowhile.dir
+
+# All Build rule for target.
+CMakeFiles/dowhile.dir/all:
+	$(MAKE) -f CMakeFiles/dowhile.dir/build.make CMakeFiles/dowhile.dir/depend
+	$(MAKE) -f CMakeFiles/dowhile.dir/build.make CMakeFiles/dowhile.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=27,28 "Built target dowhile"
+.PHONY : CMakeFiles/dowhile.dir/all
+
+# Include target in all.
+all: CMakeFiles/dowhile.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dowhile.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dowhile.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/dowhile.dir/rule
+
+# Convenience name for target.
+dowhile: CMakeFiles/dowhile.dir/rule
+
+.PHONY : dowhile
+
+# clean rule for target.
+CMakeFiles/dowhile.dir/clean:
+	$(MAKE) -f CMakeFiles/dowhile.dir/build.make CMakeFiles/dowhile.dir/clean
+.PHONY : CMakeFiles/dowhile.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/dowhile.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/fun.dir
+
+# All Build rule for target.
+CMakeFiles/fun.dir/all:
+	$(MAKE) -f CMakeFiles/fun.dir/build.make CMakeFiles/fun.dir/depend
+	$(MAKE) -f CMakeFiles/fun.dir/build.make CMakeFiles/fun.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=35,36 "Built target fun"
+.PHONY : CMakeFiles/fun.dir/all
+
+# Include target in all.
+all: CMakeFiles/fun.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/fun.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/fun.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/fun.dir/rule
+
+# Convenience name for target.
+fun: CMakeFiles/fun.dir/rule
+
+.PHONY : fun
+
+# clean rule for target.
+CMakeFiles/fun.dir/clean:
+	$(MAKE) -f CMakeFiles/fun.dir/build.make CMakeFiles/fun.dir/clean
+.PHONY : CMakeFiles/fun.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/fun.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pi1.dir
+
+# All Build rule for target.
+CMakeFiles/pi1.dir/all:
+	$(MAKE) -f CMakeFiles/pi1.dir/build.make CMakeFiles/pi1.dir/depend
+	$(MAKE) -f CMakeFiles/pi1.dir/build.make CMakeFiles/pi1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=49,50 "Built target pi1"
+.PHONY : CMakeFiles/pi1.dir/all
+
+# Include target in all.
+all: CMakeFiles/pi1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pi1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pi1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/pi1.dir/rule
+
+# Convenience name for target.
+pi1: CMakeFiles/pi1.dir/rule
+
+.PHONY : pi1
+
+# clean rule for target.
+CMakeFiles/pi1.dir/clean:
+	$(MAKE) -f CMakeFiles/pi1.dir/build.make CMakeFiles/pi1.dir/clean
+.PHONY : CMakeFiles/pi1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pi1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/rank.dir
+
+# All Build rule for target.
+CMakeFiles/rank.dir/all:
+	$(MAKE) -f CMakeFiles/rank.dir/build.make CMakeFiles/rank.dir/depend
+	$(MAKE) -f CMakeFiles/rank.dir/build.make CMakeFiles/rank.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=57,58 "Built target rank"
+.PHONY : CMakeFiles/rank.dir/all
+
+# Include target in all.
+all: CMakeFiles/rank.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/rank.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rank.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/rank.dir/rule
+
+# Convenience name for target.
+rank: CMakeFiles/rank.dir/rule
+
+.PHONY : rank
+
+# clean rule for target.
+CMakeFiles/rank.dir/clean:
+	$(MAKE) -f CMakeFiles/rank.dir/build.make CMakeFiles/rank.dir/clean
+.PHONY : CMakeFiles/rank.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/rank.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sqr1.dir
+
+# All Build rule for target.
+CMakeFiles/sqr1.dir/all:
+	$(MAKE) -f CMakeFiles/sqr1.dir/build.make CMakeFiles/sqr1.dir/depend
+	$(MAKE) -f CMakeFiles/sqr1.dir/build.make CMakeFiles/sqr1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=65,66 "Built target sqr1"
+.PHONY : CMakeFiles/sqr1.dir/all
+
+# Include target in all.
+all: CMakeFiles/sqr1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sqr1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sqr1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/sqr1.dir/rule
+
+# Convenience name for target.
+sqr1: CMakeFiles/sqr1.dir/rule
+
+.PHONY : sqr1
+
+# clean rule for target.
+CMakeFiles/sqr1.dir/clean:
+	$(MAKE) -f CMakeFiles/sqr1.dir/build.make CMakeFiles/sqr1.dir/clean
+.PHONY : CMakeFiles/sqr1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/sqr1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tixing.dir
+
+# All Build rule for target.
+CMakeFiles/tixing.dir/all:
+	$(MAKE) -f CMakeFiles/tixing.dir/build.make CMakeFiles/tixing.dir/depend
+	$(MAKE) -f CMakeFiles/tixing.dir/build.make CMakeFiles/tixing.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=71,72 "Built target tixing"
+.PHONY : CMakeFiles/tixing.dir/all
+
+# Include target in all.
+all: CMakeFiles/tixing.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tixing.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tixing.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/tixing.dir/rule
+
+# Convenience name for target.
+tixing: CMakeFiles/tixing.dir/rule
+
+.PHONY : tixing
+
+# clean rule for target.
+CMakeFiles/tixing.dir/clean:
+	$(MAKE) -f CMakeFiles/tixing.dir/build.make CMakeFiles/tixing.dir/clean
+.PHONY : CMakeFiles/tixing.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/tixing.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/trigon.dir
+
+# All Build rule for target.
+CMakeFiles/trigon.dir/all:
+	$(MAKE) -f CMakeFiles/trigon.dir/build.make CMakeFiles/trigon.dir/depend
+	$(MAKE) -f CMakeFiles/trigon.dir/build.make CMakeFiles/trigon.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=73,74 "Built target trigon"
+.PHONY : CMakeFiles/trigon.dir/all
+
+# Include target in all.
+all: CMakeFiles/trigon.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/trigon.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/trigon.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/trigon.dir/rule
+
+# Convenience name for target.
+trigon: CMakeFiles/trigon.dir/rule
+
+.PHONY : trigon
+
+# clean rule for target.
+CMakeFiles/trigon.dir/clean:
+	$(MAKE) -f CMakeFiles/trigon.dir/build.make CMakeFiles/trigon.dir/clean
+.PHONY : CMakeFiles/trigon.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/trigon.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/gcd.dir
+
+# All Build rule for target.
+CMakeFiles/gcd.dir/all:
+	$(MAKE) -f CMakeFiles/gcd.dir/build.make CMakeFiles/gcd.dir/depend
+	$(MAKE) -f CMakeFiles/gcd.dir/build.make CMakeFiles/gcd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=37,38 "Built target gcd"
+.PHONY : CMakeFiles/gcd.dir/all
+
+# Include target in all.
+all: CMakeFiles/gcd.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/gcd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gcd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/gcd.dir/rule
+
+# Convenience name for target.
+gcd: CMakeFiles/gcd.dir/rule
+
+.PHONY : gcd
+
+# clean rule for target.
+CMakeFiles/gcd.dir/clean:
+	$(MAKE) -f CMakeFiles/gcd.dir/build.make CMakeFiles/gcd.dir/clean
+.PHONY : CMakeFiles/gcd.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/gcd.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/xing.dir
+
+# All Build rule for target.
+CMakeFiles/xing.dir/all:
+	$(MAKE) -f CMakeFiles/xing.dir/build.make CMakeFiles/xing.dir/depend
+	$(MAKE) -f CMakeFiles/xing.dir/build.make CMakeFiles/xing.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=77,78 "Built target xing"
+.PHONY : CMakeFiles/xing.dir/all
+
+# Include target in all.
+all: CMakeFiles/xing.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/xing.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/xing.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
+.PHONY : CMakeFiles/xing.dir/rule
+
+# Convenience name for target.
+xing: CMakeFiles/xing.dir/rule
 
 .PHONY : xing
 
 # clean rule for target.
-test/CMakeFiles/xing.dir/clean:
-	$(MAKE) -f test/CMakeFiles/xing.dir/build.make test/CMakeFiles/xing.dir/clean
-.PHONY : test/CMakeFiles/xing.dir/clean
+CMakeFiles/xing.dir/clean:
+	$(MAKE) -f CMakeFiles/xing.dir/build.make CMakeFiles/xing.dir/clean
+.PHONY : CMakeFiles/xing.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/xing.dir/clean
+clean: CMakeFiles/xing.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/rank1.dir
+# Target rules for target CMakeFiles/rank1.dir
 
 # All Build rule for target.
-test/CMakeFiles/rank1.dir/all:
-	$(MAKE) -f test/CMakeFiles/rank1.dir/build.make test/CMakeFiles/rank1.dir/depend
-	$(MAKE) -f test/CMakeFiles/rank1.dir/build.make test/CMakeFiles/rank1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=61,62 "Built target rank1"
-.PHONY : test/CMakeFiles/rank1.dir/all
+CMakeFiles/rank1.dir/all:
+	$(MAKE) -f CMakeFiles/rank1.dir/build.make CMakeFiles/rank1.dir/depend
+	$(MAKE) -f CMakeFiles/rank1.dir/build.make CMakeFiles/rank1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=59,60 "Built target rank1"
+.PHONY : CMakeFiles/rank1.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/rank1.dir/all
+all: CMakeFiles/rank1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/rank1.dir/rule: cmake_check_build_system
+CMakeFiles/rank1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/rank1.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rank1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/rank1.dir/rule
+.PHONY : CMakeFiles/rank1.dir/rule
 
 # Convenience name for target.
-rank1: test/CMakeFiles/rank1.dir/rule
+rank1: CMakeFiles/rank1.dir/rule
 
 .PHONY : rank1
 
 # clean rule for target.
-test/CMakeFiles/rank1.dir/clean:
-	$(MAKE) -f test/CMakeFiles/rank1.dir/build.make test/CMakeFiles/rank1.dir/clean
-.PHONY : test/CMakeFiles/rank1.dir/clean
+CMakeFiles/rank1.dir/clean:
+	$(MAKE) -f CMakeFiles/rank1.dir/build.make CMakeFiles/rank1.dir/clean
+.PHONY : CMakeFiles/rank1.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/rank1.dir/clean
+clean: CMakeFiles/rank1.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/if2.dir
+# Target rules for target CMakeFiles/if2.dir
 
 # All Build rule for target.
-test/CMakeFiles/if2.dir/all:
-	$(MAKE) -f test/CMakeFiles/if2.dir/build.make test/CMakeFiles/if2.dir/depend
-	$(MAKE) -f test/CMakeFiles/if2.dir/build.make test/CMakeFiles/if2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=43,44 "Built target if2"
-.PHONY : test/CMakeFiles/if2.dir/all
+CMakeFiles/if2.dir/all:
+	$(MAKE) -f CMakeFiles/if2.dir/build.make CMakeFiles/if2.dir/depend
+	$(MAKE) -f CMakeFiles/if2.dir/build.make CMakeFiles/if2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=41,42 "Built target if2"
+.PHONY : CMakeFiles/if2.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/if2.dir/all
+all: CMakeFiles/if2.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/if2.dir/rule: cmake_check_build_system
+CMakeFiles/if2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/if2.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/if2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/if2.dir/rule
+.PHONY : CMakeFiles/if2.dir/rule
 
 # Convenience name for target.
-if2: test/CMakeFiles/if2.dir/rule
+if2: CMakeFiles/if2.dir/rule
 
 .PHONY : if2
 
 # clean rule for target.
-test/CMakeFiles/if2.dir/clean:
-	$(MAKE) -f test/CMakeFiles/if2.dir/build.make test/CMakeFiles/if2.dir/clean
-.PHONY : test/CMakeFiles/if2.dir/clean
+CMakeFiles/if2.dir/clean:
+	$(MAKE) -f CMakeFiles/if2.dir/build.make CMakeFiles/if2.dir/clean
+.PHONY : CMakeFiles/if2.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/if2.dir/clean
+clean: CMakeFiles/if2.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/factorial.dir
+# Target rules for target CMakeFiles/factorial.dir
 
 # All Build rule for target.
-test/CMakeFiles/factorial.dir/all:
-	$(MAKE) -f test/CMakeFiles/factorial.dir/build.make test/CMakeFiles/factorial.dir/depend
-	$(MAKE) -f test/CMakeFiles/factorial.dir/build.make test/CMakeFiles/factorial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=31,32 "Built target factorial"
-.PHONY : test/CMakeFiles/factorial.dir/all
+CMakeFiles/factorial.dir/all:
+	$(MAKE) -f CMakeFiles/factorial.dir/build.make CMakeFiles/factorial.dir/depend
+	$(MAKE) -f CMakeFiles/factorial.dir/build.make CMakeFiles/factorial.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=29,30 "Built target factorial"
+.PHONY : CMakeFiles/factorial.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/factorial.dir/all
+all: CMakeFiles/factorial.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/factorial.dir/rule: cmake_check_build_system
+CMakeFiles/factorial.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/factorial.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/factorial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/factorial.dir/rule
+.PHONY : CMakeFiles/factorial.dir/rule
 
 # Convenience name for target.
-factorial: test/CMakeFiles/factorial.dir/rule
+factorial: CMakeFiles/factorial.dir/rule
 
 .PHONY : factorial
 
 # clean rule for target.
-test/CMakeFiles/factorial.dir/clean:
-	$(MAKE) -f test/CMakeFiles/factorial.dir/build.make test/CMakeFiles/factorial.dir/clean
-.PHONY : test/CMakeFiles/factorial.dir/clean
+CMakeFiles/factorial.dir/clean:
+	$(MAKE) -f CMakeFiles/factorial.dir/build.make CMakeFiles/factorial.dir/clean
+.PHONY : CMakeFiles/factorial.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/factorial.dir/clean
+clean: CMakeFiles/factorial.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/asterist.dir
+# Target rules for target CMakeFiles/asterist.dir
 
 # All Build rule for target.
-test/CMakeFiles/asterist.dir/all:
-	$(MAKE) -f test/CMakeFiles/asterist.dir/build.make test/CMakeFiles/asterist.dir/depend
-	$(MAKE) -f test/CMakeFiles/asterist.dir/build.make test/CMakeFiles/asterist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=21,22 "Built target asterist"
-.PHONY : test/CMakeFiles/asterist.dir/all
+CMakeFiles/asterist.dir/all:
+	$(MAKE) -f CMakeFiles/asterist.dir/build.make CMakeFiles/asterist.dir/depend
+	$(MAKE) -f CMakeFiles/asterist.dir/build.make CMakeFiles/asterist.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=19,20 "Built target asterist"
+.PHONY : CMakeFiles/asterist.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/asterist.dir/all
+all: CMakeFiles/asterist.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/asterist.dir/rule: cmake_check_build_system
+CMakeFiles/asterist.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/asterist.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/asterist.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/asterist.dir/rule
+.PHONY : CMakeFiles/asterist.dir/rule
 
 # Convenience name for target.
-asterist: test/CMakeFiles/asterist.dir/rule
+asterist: CMakeFiles/asterist.dir/rule
 
 .PHONY : asterist
 
 # clean rule for target.
-test/CMakeFiles/asterist.dir/clean:
-	$(MAKE) -f test/CMakeFiles/asterist.dir/build.make test/CMakeFiles/asterist.dir/clean
-.PHONY : test/CMakeFiles/asterist.dir/clean
+CMakeFiles/asterist.dir/clean:
+	$(MAKE) -f CMakeFiles/asterist.dir/build.make CMakeFiles/asterist.dir/clean
+.PHONY : CMakeFiles/asterist.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/asterist.dir/clean
+clean: CMakeFiles/asterist.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/sum.dir
+# Target rules for target CMakeFiles/sum.dir
 
 # All Build rule for target.
-test/CMakeFiles/sum.dir/all:
-	$(MAKE) -f test/CMakeFiles/sum.dir/build.make test/CMakeFiles/sum.dir/depend
-	$(MAKE) -f test/CMakeFiles/sum.dir/build.make test/CMakeFiles/sum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=69,70 "Built target sum"
-.PHONY : test/CMakeFiles/sum.dir/all
+CMakeFiles/sum.dir/all:
+	$(MAKE) -f CMakeFiles/sum.dir/build.make CMakeFiles/sum.dir/depend
+	$(MAKE) -f CMakeFiles/sum.dir/build.make CMakeFiles/sum.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=67,68 "Built target sum"
+.PHONY : CMakeFiles/sum.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/sum.dir/all
+all: CMakeFiles/sum.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/sum.dir/rule: cmake_check_build_system
+CMakeFiles/sum.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sum.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sum.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/sum.dir/rule
+.PHONY : CMakeFiles/sum.dir/rule
 
 # Convenience name for target.
-sum: test/CMakeFiles/sum.dir/rule
+sum: CMakeFiles/sum.dir/rule
 
 .PHONY : sum
 
 # clean rule for target.
-test/CMakeFiles/sum.dir/clean:
-	$(MAKE) -f test/CMakeFiles/sum.dir/build.make test/CMakeFiles/sum.dir/clean
-.PHONY : test/CMakeFiles/sum.dir/clean
+CMakeFiles/sum.dir/clean:
+	$(MAKE) -f CMakeFiles/sum.dir/build.make CMakeFiles/sum.dir/clean
+.PHONY : CMakeFiles/sum.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/sum.dir/clean
+clean: CMakeFiles/sum.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/formore.dir
+# Target rules for target CMakeFiles/formore.dir
 
 # All Build rule for target.
-test/CMakeFiles/formore.dir/all:
-	$(MAKE) -f test/CMakeFiles/formore.dir/build.make test/CMakeFiles/formore.dir/depend
-	$(MAKE) -f test/CMakeFiles/formore.dir/build.make test/CMakeFiles/formore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=35,36 "Built target formore"
-.PHONY : test/CMakeFiles/formore.dir/all
+CMakeFiles/formore.dir/all:
+	$(MAKE) -f CMakeFiles/formore.dir/build.make CMakeFiles/formore.dir/depend
+	$(MAKE) -f CMakeFiles/formore.dir/build.make CMakeFiles/formore.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=33,34 "Built target formore"
+.PHONY : CMakeFiles/formore.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/formore.dir/all
+all: CMakeFiles/formore.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/formore.dir/rule: cmake_check_build_system
+CMakeFiles/formore.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/formore.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/formore.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/formore.dir/rule
+.PHONY : CMakeFiles/formore.dir/rule
 
 # Convenience name for target.
-formore: test/CMakeFiles/formore.dir/rule
+formore: CMakeFiles/formore.dir/rule
 
 .PHONY : formore
 
 # clean rule for target.
-test/CMakeFiles/formore.dir/clean:
-	$(MAKE) -f test/CMakeFiles/formore.dir/build.make test/CMakeFiles/formore.dir/clean
-.PHONY : test/CMakeFiles/formore.dir/clean
+CMakeFiles/formore.dir/clean:
+	$(MAKE) -f CMakeFiles/formore.dir/build.make CMakeFiles/formore.dir/clean
+.PHONY : CMakeFiles/formore.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/formore.dir/clean
+clean: CMakeFiles/formore.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/sum1.dir
+# Target rules for target CMakeFiles/sum1.dir
 
 # All Build rule for target.
-test/CMakeFiles/sum1.dir/all:
-	$(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/depend
-	$(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=71,72 "Built target sum1"
-.PHONY : test/CMakeFiles/sum1.dir/all
+CMakeFiles/sum1.dir/all:
+	$(MAKE) -f CMakeFiles/sum1.dir/build.make CMakeFiles/sum1.dir/depend
+	$(MAKE) -f CMakeFiles/sum1.dir/build.make CMakeFiles/sum1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=69,70 "Built target sum1"
+.PHONY : CMakeFiles/sum1.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/sum1.dir/all
+all: CMakeFiles/sum1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/sum1.dir/rule: cmake_check_build_system
+CMakeFiles/sum1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sum1.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sum1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/sum1.dir/rule
+.PHONY : CMakeFiles/sum1.dir/rule
 
 # Convenience name for target.
-sum1: test/CMakeFiles/sum1.dir/rule
+sum1: CMakeFiles/sum1.dir/rule
 
 .PHONY : sum1
 
 # clean rule for target.
-test/CMakeFiles/sum1.dir/clean:
-	$(MAKE) -f test/CMakeFiles/sum1.dir/build.make test/CMakeFiles/sum1.dir/clean
-.PHONY : test/CMakeFiles/sum1.dir/clean
+CMakeFiles/sum1.dir/clean:
+	$(MAKE) -f CMakeFiles/sum1.dir/build.make CMakeFiles/sum1.dir/clean
+.PHONY : CMakeFiles/sum1.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/sum1.dir/clean
+clean: CMakeFiles/sum1.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/arctan.dir
+# Target rules for target CMakeFiles/arctan.dir
 
 # All Build rule for target.
-test/CMakeFiles/arctan.dir/all:
-	$(MAKE) -f test/CMakeFiles/arctan.dir/build.make test/CMakeFiles/arctan.dir/depend
-	$(MAKE) -f test/CMakeFiles/arctan.dir/build.make test/CMakeFiles/arctan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=17,18 "Built target arctan"
-.PHONY : test/CMakeFiles/arctan.dir/all
+CMakeFiles/arctan.dir/all:
+	$(MAKE) -f CMakeFiles/arctan.dir/build.make CMakeFiles/arctan.dir/depend
+	$(MAKE) -f CMakeFiles/arctan.dir/build.make CMakeFiles/arctan.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wlj/repository/wlj-study/test/CMakeFiles --progress-num=15,16 "Built target arctan"
+.PHONY : CMakeFiles/arctan.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/arctan.dir/all
+all: CMakeFiles/arctan.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/arctan.dir/rule: cmake_check_build_system
+CMakeFiles/arctan.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/arctan.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/arctan.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wlj/repository/wlj-study/test/CMakeFiles 0
-.PHONY : test/CMakeFiles/arctan.dir/rule
+.PHONY : CMakeFiles/arctan.dir/rule
 
 # Convenience name for target.
-arctan: test/CMakeFiles/arctan.dir/rule
+arctan: CMakeFiles/arctan.dir/rule
 
 .PHONY : arctan
 
 # clean rule for target.
-test/CMakeFiles/arctan.dir/clean:
-	$(MAKE) -f test/CMakeFiles/arctan.dir/build.make test/CMakeFiles/arctan.dir/clean
-.PHONY : test/CMakeFiles/arctan.dir/clean
+CMakeFiles/arctan.dir/clean:
+	$(MAKE) -f CMakeFiles/arctan.dir/build.make CMakeFiles/arctan.dir/clean
+.PHONY : CMakeFiles/arctan.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/arctan.dir/clean
+clean: CMakeFiles/arctan.dir/clean
 
 .PHONY : clean
 
