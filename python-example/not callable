@@ -1,0 +1,278 @@
+[0;31mType:        [0mfunction
+[0;31mString form: [0m<function tabulate at 0x7fde19b79268>
+[0;31mFile:        [0m/usr/lib/python3/dist-packages/tabulate.py
+[0;31mDefinition:  [0m[0mtabulate[0m[0;34m([0m[0mtabular_data[0m[0;34m,[0m [0mheaders[0m[0;34m=[0m[0;34m([0m[0;34m)[0m[0;34m,[0m [0mtablefmt[0m[0;34m=[0m[0;34m'simple'[0m[0;34m,[0m [0mfloatfmt[0m[0;34m=[0m[0;34m'g'[0m[0;34m,[0m [0mnumalign[0m[0;34m=[0m[0;34m'decimal'[0m[0;34m,[0m [0mstralign[0m[0;34m=[0m[0;34m'left'[0m[0;34m,[0m [0mmissingval[0m[0;34m=[0m[0;34m''[0m[0;34m)[0m[0;34m[0m[0m
+[0;31mSource:[0m
+[0;32mdef[0m [0mtabulate[0m[0;34m([0m[0mtabular_data[0m[0;34m,[0m [0mheaders[0m[0;34m=[0m[0;34m([0m[0;34m)[0m[0;34m,[0m [0mtablefmt[0m[0;34m=[0m[0;34m"simple"[0m[0;34m,[0m[0;34m[0m
+[0;34m[0m             [0mfloatfmt[0m[0;34m=[0m[0;34m"g"[0m[0;34m,[0m [0mnumalign[0m[0;34m=[0m[0;34m"decimal"[0m[0;34m,[0m [0mstralign[0m[0;34m=[0m[0;34m"left"[0m[0;34m,[0m[0;34m[0m
+[0;34m[0m             [0mmissingval[0m[0;34m=[0m[0;34m""[0m[0;34m)[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m    [0;34m"""Format a fixed width table for pretty printing.[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([[1, 2.34], [-56, "8.999"], ["2", "10001"]]))[0m
+[0;34m    ---  ---------[0m
+[0;34m      1      2.34[0m
+[0;34m    -56      8.999[0m
+[0;34m      2  10001[0m
+[0;34m    ---  ---------[0m
+[0;34m[0m
+[0;34m    The first required argument (`tabular_data`) can be a[0m
+[0;34m    list-of-lists (or another iterable of iterables), a list of named[0m
+[0;34m    tuples, a dictionary of iterables, an iterable of dictionaries,[0m
+[0;34m    a two-dimensional NumPy array, NumPy record array, or a Pandas'[0m
+[0;34m    dataframe.[0m
+[0;34m[0m
+[0;34m[0m
+[0;34m    Table headers[0m
+[0;34m    -------------[0m
+[0;34m[0m
+[0;34m    To print nice column headers, supply the second argument (`headers`):[0m
+[0;34m[0m
+[0;34m      - `headers` can be an explicit list of column headers[0m
+[0;34m      - if `headers="firstrow"`, then the first row of data is used[0m
+[0;34m      - if `headers="keys"`, then dictionary keys or column indices are used[0m
+[0;34m[0m
+[0;34m    Otherwise a headerless table is produced.[0m
+[0;34m[0m
+[0;34m    If the number of headers is less than the number of columns, they[0m
+[0;34m    are supposed to be names of the last columns. This is consistent[0m
+[0;34m    with the plain-text format of R and Pandas' dataframes.[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["sex","age"],["Alice","F",24],["Bob","M",19]],[0m
+[0;34m    ...       headers="firstrow"))[0m
+[0;34m           sex      age[0m
+[0;34m    -----  -----  -----[0m
+[0;34m    Alice  F         24[0m
+[0;34m    Bob    M         19[0m
+[0;34m[0m
+[0;34m[0m
+[0;34m    Column alignment[0m
+[0;34m    ----------------[0m
+[0;34m[0m
+[0;34m    `tabulate` tries to detect column types automatically, and aligns[0m
+[0;34m    the values properly. By default it aligns decimal points of the[0m
+[0;34m    numbers (or flushes integer numbers to the right), and flushes[0m
+[0;34m    everything else to the left. Possible column alignments[0m
+[0;34m    (`numalign`, `stralign`) are: "right", "center", "left", "decimal"[0m
+[0;34m    (only for `numalign`), and None (to disable alignment).[0m
+[0;34m[0m
+[0;34m[0m
+[0;34m    Table formats[0m
+[0;34m    -------------[0m
+[0;34m[0m
+[0;34m    `floatfmt` is a format specification used for columns which[0m
+[0;34m    contain numeric data with a decimal point.[0m
+[0;34m[0m
+[0;34m    `None` values are replaced with a `missingval` string:[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 1, None],[0m
+[0;34m    ...                 ["eggs", 42, 3.14],[0m
+[0;34m    ...                 ["other", None, 2.7]], missingval="?"))[0m
+[0;34m    -----  --  ----[0m
+[0;34m    spam    1  ?[0m
+[0;34m    eggs   42  3.14[0m
+[0;34m    other   ?  2.7[0m
+[0;34m    -----  --  ----[0m
+[0;34m[0m
+[0;34m    Various plain-text table formats (`tablefmt`) are supported:[0m
+[0;34m    'plain', 'simple', 'grid', 'pipe', 'orgtbl', 'rst', 'mediawiki',[0m
+[0;34m     'latex', and 'latex_booktabs'. Variable `tabulate_formats` contains the list of[0m
+[0;34m    currently supported formats.[0m
+[0;34m[0m
+[0;34m    "plain" format doesn't use any pseudographics to draw tables,[0m
+[0;34m    it separates columns with a double space:[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]],[0m
+[0;34m    ...                 ["strings", "numbers"], "plain"))[0m
+[0;34m    strings      numbers[0m
+[0;34m    spam         41.9999[0m
+[0;34m    eggs        451[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]], tablefmt="plain"))[0m
+[0;34m    spam   41.9999[0m
+[0;34m    eggs  451[0m
+[0;34m[0m
+[0;34m    "simple" format is like Pandoc simple_tables:[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]],[0m
+[0;34m    ...                 ["strings", "numbers"], "simple"))[0m
+[0;34m    strings      numbers[0m
+[0;34m    ---------  ---------[0m
+[0;34m    spam         41.9999[0m
+[0;34m    eggs        451[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]], tablefmt="simple"))[0m
+[0;34m    ----  --------[0m
+[0;34m    spam   41.9999[0m
+[0;34m    eggs  451[0m
+[0;34m    ----  --------[0m
+[0;34m[0m
+[0;34m    "grid" is similar to tables produced by Emacs table.el package or[0m
+[0;34m    Pandoc grid_tables:[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]],[0m
+[0;34m    ...                ["strings", "numbers"], "grid"))[0m
+[0;34m    +-----------+-----------+[0m
+[0;34m    | strings   |   numbers |[0m
+[0;34m    +===========+===========+[0m
+[0;34m    | spam      |   41.9999 |[0m
+[0;34m    +-----------+-----------+[0m
+[0;34m    | eggs      |  451      |[0m
+[0;34m    +-----------+-----------+[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]], tablefmt="grid"))[0m
+[0;34m    +------+----------+[0m
+[0;34m    | spam |  41.9999 |[0m
+[0;34m    +------+----------+[0m
+[0;34m    | eggs | 451      |[0m
+[0;34m    +------+----------+[0m
+[0;34m[0m
+[0;34m    "fancy_grid" draws a grid using box-drawing characters:[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]],[0m
+[0;34m    ...                ["strings", "numbers"], "fancy_grid"))[0m
+[0;34m    ╒═══════════╤═══════════╕[0m
+[0;34m    │ strings   │   numbers │[0m
+[0;34m    ╞═══════════╪═══════════╡[0m
+[0;34m    │ spam      │   41.9999 │[0m
+[0;34m    ├───────────┼───────────┤[0m
+[0;34m    │ eggs      │  451      │[0m
+[0;34m    ╘═══════════╧═══════════╛[0m
+[0;34m[0m
+[0;34m    "pipe" is like tables in PHP Markdown Extra extension or Pandoc[0m
+[0;34m    pipe_tables:[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]],[0m
+[0;34m    ...                ["strings", "numbers"], "pipe"))[0m
+[0;34m    | strings   |   numbers |[0m
+[0;34m    |:----------|----------:|[0m
+[0;34m    | spam      |   41.9999 |[0m
+[0;34m    | eggs      |  451      |[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]], tablefmt="pipe"))[0m
+[0;34m    |:-----|---------:|[0m
+[0;34m    | spam |  41.9999 |[0m
+[0;34m    | eggs | 451      |[0m
+[0;34m[0m
+[0;34m    "orgtbl" is like tables in Emacs org-mode and orgtbl-mode. They[0m
+[0;34m    are slightly different from "pipe" format by not using colons to[0m
+[0;34m    define column alignment, and using a "+" sign to indicate line[0m
+[0;34m    intersections:[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]],[0m
+[0;34m    ...                ["strings", "numbers"], "orgtbl"))[0m
+[0;34m    | strings   |   numbers |[0m
+[0;34m    |-----------+-----------|[0m
+[0;34m    | spam      |   41.9999 |[0m
+[0;34m    | eggs      |  451      |[0m
+[0;34m[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]], tablefmt="orgtbl"))[0m
+[0;34m    | spam |  41.9999 |[0m
+[0;34m    | eggs | 451      |[0m
+[0;34m[0m
+[0;34m    "rst" is like a simple table format from reStructuredText; please[0m
+[0;34m    note that reStructuredText accepts also "grid" tables:[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]],[0m
+[0;34m    ...                ["strings", "numbers"], "rst"))[0m
+[0;34m    =========  =========[0m
+[0;34m    strings      numbers[0m
+[0;34m    =========  =========[0m
+[0;34m    spam         41.9999[0m
+[0;34m    eggs        451[0m
+[0;34m    =========  =========[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]], tablefmt="rst"))[0m
+[0;34m    ====  ========[0m
+[0;34m    spam   41.9999[0m
+[0;34m    eggs  451[0m
+[0;34m    ====  ========[0m
+[0;34m[0m
+[0;34m    "mediawiki" produces a table markup used in Wikipedia and on other[0m
+[0;34m    MediaWiki-based sites:[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["strings", "numbers"], ["spam", 41.9999], ["eggs", "451.0"]],[0m
+[0;34m    ...                headers="firstrow", tablefmt="mediawiki"))[0m
+[0;34m    {| class="wikitable" style="text-align: left;"[0m
+[0;34m    |+ <!-- caption -->[0m
+[0;34m    |-[0m
+[0;34m    ! strings   !! align="right"|   numbers[0m
+[0;34m    |-[0m
+[0;34m    | spam      || align="right"|   41.9999[0m
+[0;34m    |-[0m
+[0;34m    | eggs      || align="right"|  451[0m
+[0;34m    |}[0m
+[0;34m[0m
+[0;34m    "html" produces HTML markup:[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["strings", "numbers"], ["spam", 41.9999], ["eggs", "451.0"]],[0m
+[0;34m    ...                headers="firstrow", tablefmt="html"))[0m
+[0;34m    <table>[0m
+[0;34m    <tr><th>strings  </th><th style="text-align: right;">  numbers</th></tr>[0m
+[0;34m    <tr><td>spam     </td><td style="text-align: right;">  41.9999</td></tr>[0m
+[0;34m    <tr><td>eggs     </td><td style="text-align: right;"> 451     </td></tr>[0m
+[0;34m    </table>[0m
+[0;34m[0m
+[0;34m    "latex" produces a tabular environment of LaTeX document markup:[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]], tablefmt="latex"))[0m
+[0;34m    \\begin{tabular}{lr}[0m
+[0;34m    \\hline[0m
+[0;34m     spam &  41.9999 \\\\[0m
+[0;34m     eggs & 451      \\\\[0m
+[0;34m    \\hline[0m
+[0;34m    \\end{tabular}[0m
+[0;34m[0m
+[0;34m    "latex_booktabs" produces a tabular environment of LaTeX document markup[0m
+[0;34m    using the booktabs.sty package:[0m
+[0;34m[0m
+[0;34m    >>> print(tabulate([["spam", 41.9999], ["eggs", "451.0"]], tablefmt="latex_booktabs"))[0m
+[0;34m    \\begin{tabular}{lr}[0m
+[0;34m    \\toprule[0m
+[0;34m     spam &  41.9999 \\\\[0m
+[0;34m     eggs & 451      \\\\[0m
+[0;34m    \\bottomrule[0m
+[0;34m    \end{tabular}[0m
+[0;34m    """[0m[0;34m[0m
+[0;34m[0m    [0;32mif[0m [0mtabular_data[0m [0;32mis[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m        [0mtabular_data[0m [0;34m=[0m [0;34m[[0m[0;34m][0m[0;34m[0m
+[0;34m[0m    [0mlist_of_lists[0m[0;34m,[0m [0mheaders[0m [0;34m=[0m [0m_normalize_tabular_data[0m[0;34m([0m[0mtabular_data[0m[0;34m,[0m [0mheaders[0m[0;34m)[0m[0;34m[0m
+[0;34m[0m[0;34m[0m
+[0;34m[0m    [0;31m# optimization: look for ANSI control codes once,[0m[0;34m[0m
+[0;34m[0m    [0;31m# enable smart width functions only if a control code is found[0m[0;34m[0m
+[0;34m[0m    [0mplain_text[0m [0;34m=[0m [0;34m'\n'[0m[0;34m.[0m[0mjoin[0m[0;34m([0m[0;34m[[0m[0;34m'\t'[0m[0;34m.[0m[0mjoin[0m[0;34m([0m[0mmap[0m[0;34m([0m[0m_text_type[0m[0;34m,[0m [0mheaders[0m[0;34m)[0m[0;34m)[0m[0;34m][0m [0;34m+[0m \
+                            [0;34m[[0m[0;34m'\t'[0m[0;34m.[0m[0mjoin[0m[0;34m([0m[0mmap[0m[0;34m([0m[0m_text_type[0m[0;34m,[0m [0mrow[0m[0;34m)[0m[0;34m)[0m [0;32mfor[0m [0mrow[0m [0;32min[0m [0mlist_of_lists[0m[0;34m][0m[0;34m)[0m[0;34m[0m
+[0;34m[0m    [0mhas_invisible[0m [0;34m=[0m [0mre[0m[0;34m.[0m[0msearch[0m[0;34m([0m[0m_invisible_codes[0m[0;34m,[0m [0mplain_text[0m[0;34m)[0m[0;34m[0m
+[0;34m[0m    [0;32mif[0m [0mhas_invisible[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m        [0mwidth_fn[0m [0;34m=[0m [0m_visible_width[0m[0;34m[0m
+[0;34m[0m    [0;32melse[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m        [0mwidth_fn[0m [0;34m=[0m [0mlen[0m[0;34m[0m
+[0;34m[0m[0;34m[0m
+[0;34m[0m    [0;31m# format rows and columns, convert numeric values to strings[0m[0;34m[0m
+[0;34m[0m    [0mcols[0m [0;34m=[0m [0mlist[0m[0;34m([0m[0mzip[0m[0;34m([0m[0;34m*[0m[0mlist_of_lists[0m[0;34m)[0m[0;34m)[0m[0;34m[0m
+[0;34m[0m    [0mcoltypes[0m [0;34m=[0m [0mlist[0m[0;34m([0m[0mmap[0m[0;34m([0m[0m_column_type[0m[0;34m,[0m [0mcols[0m[0;34m)[0m[0;34m)[0m[0;34m[0m
+[0;34m[0m    [0mcols[0m [0;34m=[0m [0;34m[[0m[0;34m[[0m[0m_format[0m[0;34m([0m[0mv[0m[0;34m,[0m [0mct[0m[0;34m,[0m [0mfloatfmt[0m[0;34m,[0m [0mmissingval[0m[0;34m,[0m [0mhas_invisible[0m[0;34m)[0m [0;32mfor[0m [0mv[0m [0;32min[0m [0mc[0m[0;34m][0m[0;34m[0m
+[0;34m[0m             [0;32mfor[0m [0mc[0m[0;34m,[0m[0mct[0m [0;32min[0m [0mzip[0m[0;34m([0m[0mcols[0m[0;34m,[0m [0mcoltypes[0m[0;34m)[0m[0;34m][0m[0;34m[0m
+[0;34m[0m[0;34m[0m
+[0;34m[0m    [0;31m# align columns[0m[0;34m[0m
+[0;34m[0m    [0maligns[0m [0;34m=[0m [0;34m[[0m[0mnumalign[0m [0;32mif[0m [0mct[0m [0;32min[0m [0;34m[[0m[0mint[0m[0;34m,[0m[0mfloat[0m[0;34m][0m [0;32melse[0m [0mstralign[0m [0;32mfor[0m [0mct[0m [0;32min[0m [0mcoltypes[0m[0;34m][0m[0;34m[0m
+[0;34m[0m    [0mminwidths[0m [0;34m=[0m [0;34m[[0m[0mwidth_fn[0m[0;34m([0m[0mh[0m[0;34m)[0m [0;34m+[0m [0mMIN_PADDING[0m [0;32mfor[0m [0mh[0m [0;32min[0m [0mheaders[0m[0;34m][0m [0;32mif[0m [0mheaders[0m [0;32melse[0m [0;34m[[0m[0;36m0[0m[0;34m][0m[0;34m*[0m[0mlen[0m[0;34m([0m[0mcols[0m[0;34m)[0m[0;34m[0m
+[0;34m[0m    [0mcols[0m [0;34m=[0m [0;34m[[0m[0m_align_column[0m[0;34m([0m[0mc[0m[0;34m,[0m [0ma[0m[0;34m,[0m [0mminw[0m[0;34m,[0m [0mhas_invisible[0m[0;34m)[0m[0;34m[0m
+[0;34m[0m            [0;32mfor[0m [0mc[0m[0;34m,[0m [0ma[0m[0;34m,[0m [0mminw[0m [0;32min[0m [0mzip[0m[0;34m([0m[0mcols[0m[0;34m,[0m [0maligns[0m[0;34m,[0m [0mminwidths[0m[0;34m)[0m[0;34m][0m[0;34m[0m
+[0;34m[0m[0;34m[0m
+[0;34m[0m    [0;32mif[0m [0mheaders[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m        [0;31m# align headers and add headers[0m[0;34m[0m
+[0;34m[0m        [0mt_cols[0m [0;34m=[0m [0mcols[0m [0;32mor[0m [0;34m[[0m[0;34m[[0m[0;34m''[0m[0;34m][0m[0;34m][0m [0;34m*[0m [0mlen[0m[0;34m([0m[0mheaders[0m[0;34m)[0m[0;34m[0m
+[0;34m[0m        [0mt_aligns[0m [0;34m=[0m [0maligns[0m [0;32mor[0m [0;34m[[0m[0mstralign[0m[0;34m][0m [0;34m*[0m [0mlen[0m[0;34m([0m[0mheaders[0m[0;34m)[0m[0;34m[0m
+[0;34m[0m        [0mminwidths[0m [0;34m=[0m [0;34m[[0m[0mmax[0m[0;34m([0m[0mminw[0m[0;34m,[0m [0mwidth_fn[0m[0;34m([0m[0mc[0m[0;34m[[0m[0;36m0[0m[0;34m][0m[0;34m)[0m[0;34m)[0m [0;32mfor[0m [0mminw[0m[0;34m,[0m [0mc[0m [0;32min[0m [0mzip[0m[0;34m([0m[0mminwidths[0m[0;34m,[0m [0mt_cols[0m[0;34m)[0m[0;34m][0m[0;34m[0m
+[0;34m[0m        [0mheaders[0m [0;34m=[0m [0;34m[[0m[0m_align_header[0m[0;34m([0m[0mh[0m[0;34m,[0m [0ma[0m[0;34m,[0m [0mminw[0m[0;34m)[0m[0;34m[0m
+[0;34m[0m                   [0;32mfor[0m [0mh[0m[0;34m,[0m [0ma[0m[0;34m,[0m [0mminw[0m [0;32min[0m [0mzip[0m[0;34m([0m[0mheaders[0m[0;34m,[0m [0mt_aligns[0m[0;34m,[0m [0mminwidths[0m[0;34m)[0m[0;34m][0m[0;34m[0m
+[0;34m[0m        [0mrows[0m [0;34m=[0m [0mlist[0m[0;34m([0m[0mzip[0m[0;34m([0m[0;34m*[0m[0mcols[0m[0;34m)[0m[0;34m)[0m[0;34m[0m
+[0;34m[0m    [0;32melse[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m        [0mminwidths[0m [0;34m=[0m [0;34m[[0m[0mwidth_fn[0m[0;34m([0m[0mc[0m[0;34m[[0m[0;36m0[0m[0;34m][0m[0;34m)[0m [0;32mfor[0m [0mc[0m [0;32min[0m [0mcols[0m[0;34m][0m[0;34m[0m
+[0;34m[0m        [0mrows[0m [0;34m=[0m [0mlist[0m[0;34m([0m[0mzip[0m[0;34m([0m[0;34m*[0m[0mcols[0m[0;34m)[0m[0;34m)[0m[0;34m[0m
+[0;34m[0m[0;34m[0m
+[0;34m[0m    [0;32mif[0m [0;32mnot[0m [0misinstance[0m[0;34m([0m[0mtablefmt[0m[0;34m,[0m [0mTableFormat[0m[0;34m)[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m        [0mtablefmt[0m [0;34m=[0m [0m_table_formats[0m[0;34m.[0m[0mget[0m[0;34m([0m[0mtablefmt[0m[0;34m,[0m [0m_table_formats[0m[0;34m[[0m[0;34m"simple"[0m[0;34m][0m[0;34m)[0m[0;34m[0m
+[0;34m[0m[0;34m[0m
+[0;34m[0m    [0;32mreturn[0m [0m_format_table[0m[0;34m([0m[0mtablefmt[0m[0;34m,[0m [0mheaders[0m[0;34m,[0m [0mrows[0m[0;34m,[0m [0mminwidths[0m[0;34m,[0m [0maligns[0m[0;34m)[0m[0;34m[0m[0m
